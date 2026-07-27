@@ -1,0 +1,99 @@
+# 首次部署前请在仓库 Settings → Pages → Build and deployment
+# 将 Source 设为「GitHub Actions」，否则 configure-pages 会报 Not Found。
+name: Deploy Static Site
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            ./ _site/
+
+          # 绝对路径 /static、/locales 在 GitHub Pages 项目站下会 404，必须加上仓库子路径
+          python3 <<'PY'
+          from pathlib import Path
+          import os
+
+          base = os.environ["BASE_PATH"].rstrip("/")
+          root = Path("_site")
+          suffixes = {".html", ".js", ".css", ".json", ".svg"}
+          replacements = (
+              ('"/static/', f'"{base}/static/'),
+              ("'/static/", f"'{base}/static/"),
+              ("`/static/", f"`{base}/static/"),
+              ('"/locales/', f'"{base}/locales/'),
+              ("'/locales/", f"'{base}/locales/"),
+              ("`/locales/", f"`{base}/locales/"),
+              ('"/icon.ico"', f'"{base}/icon.ico"'),
+              ("'/icon.ico'", f"'{base}/icon.ico'"),
+          )
+
+          changed = 0
+          for path in root.rglob("*"):
+              if not path.is_file() or path.suffix not in suffixes:
+                  continue
+              text = path.read_text(encoding="utf-8", errors="ignore")
+              new = text
+              for old, repl in replacements:
+                  new = new.replace(old, repl)
+              if new != text:
+                  path.write_text(new, encoding="utf-8")
+                  changed += 1
+
+          index = (root / "index.html").read_text(encoding="utf-8")
+          if f'"{base}/static/' not in index:
+              raise SystemExit(
+                  "index.html base-path rewrite failed; "
+                  f"expected paths like {base}/static/..."
+              )
+          print(f"Rewrote asset paths with base={base} in {changed} files")
+          PY
+
+          # SPA 深链接回退；禁用 Jekyll，避免忽略部分静态资源
+          cp _site/index.html _site/404.html
+          touch _site/.nojekyll
+
+          echo "---- deployed index.html (head) ----"
+          head -n 25 _site/index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
