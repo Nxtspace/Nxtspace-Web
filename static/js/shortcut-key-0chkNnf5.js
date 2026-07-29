@@ -1,0 +1,1 @@
+import{m as e}from"./framework-DKda5VYR.js";import{t}from"./hotkey-list-CW-fILbj.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};
