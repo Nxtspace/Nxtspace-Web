@@ -1081,6 +1081,8 @@
       "wall-perspective-preview": "墙体透视预览",
       "wall-height": "墙体高度",
       "wall-transparency": "墙体透明度",
+      "wall-texture-a": "墙体A面材质",
+      "wall-texture-b": "墙体B面材质",
       "close-hint": "合"
     },
     "scene-settings": {

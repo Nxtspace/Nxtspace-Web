@@ -1081,6 +1081,8 @@
       "wall-perspective-preview": "Wall Perspective Preview",
       "wall-height": "Wall Height",
       "wall-transparency": "Wall Transparency",
+      "wall-texture-a": "Wall Face A Material",
+      "wall-texture-b": "Wall Face B Material",
       "close-hint": "Close"
     },
     "scene-settings": {
