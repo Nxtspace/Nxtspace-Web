@@ -1085,6 +1085,15 @@
       "wall-texture-b": "墙体B面材质",
       "close-hint": "合"
     },
+    "zone-material-settings": {
+      "title": "区域材质设置",
+      "zone-title": "区域标题",
+      "mode": "区域类型",
+      "texture": "区域纹理",
+      "fill": "区域填充色",
+      "opacity": "区域透明度",
+      "color": "颜色"
+    },
     "scene-settings": {
       "title": "场景设置",
       "scene-width": "场景宽度",

@@ -1085,6 +1085,15 @@
       "wall-texture-b": "Wall Face B Material",
       "close-hint": "Close"
     },
+    "zone-material-settings": {
+      "title": "Zone Material Settings",
+      "zone-title": "Zone Title",
+      "mode": "Zone Type",
+      "texture": "Zone Texture",
+      "fill": "Zone Fill Color",
+      "opacity": "Zone Opacity",
+      "color": "Color"
+    },
     "scene-settings": {
       "title": "Scene Settings",
       "scene-width": "Scene Width",
