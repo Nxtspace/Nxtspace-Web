@@ -6,6 +6,12 @@
 
 <h2 align="center">Nxtspace Web</h2>
 
+<p align="center">
+  <a href="https://nxtspace.github.io/Nxtspace-Web/" target="_blank">
+    🚀 在线预览
+  </a>
+</p>
+
 ---
 
 ![React](https://img.shields.io/badge/React-v19.2.5-61DAFB?logo=react&logoColor=white&style=flat-square) ![Vite](https://img.shields.io/badge/Vite-v8.0.10-646CFF?logo=vite&logoColor=white&style=flat-square) ![Three.js](https://img.shields.io/badge/Three.js-v0.183.2-000000?logo=three.js&logoColor=white&style=flat-square) [![Leafer](https://img.shields.io/github/v/release/leaferjs/leafer?label=Leafer&color=34d399r&style=flat-square)](https://www.leaferjs.com/) ![React](https://img.shields.io/badge/Typescript-v6.0.2-007ACC?logo=typescript&logoColor=white&style=flat-square) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4.3.0-06B6D4?logo=tailwindcss&logoColor=white&style=flat-square) ![Shadcn/ui](https://img.shields.io/badge/Shadcn%2Fui-v4.14.1-000000?logo=shadcnui&logoColor=white&style=flat-square)
