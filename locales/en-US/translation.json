@@ -1085,8 +1085,8 @@
       "wall-texture-b": "Wall Face B Material",
       "close-hint": "Close"
     },
-    "zone-material-settings": {
-      "title": "Zone Material Settings",
+    "zone-default-settings": {
+      "title": "Zone Default Settings",
       "zone-title": "Zone Title",
       "mode": "Zone Type",
       "texture": "Zone Texture",
