@@ -79,6 +79,24 @@ jobs:
           print(f"Rewrote asset paths with base={base} in {changed} files")
           PY
 
+          # 由部署流程统一给入口页添加浏览器禁缓存策略
+          python3 <<'PY'
+          from pathlib import Path
+
+          index = Path("_site/index.html")
+          text = index.read_text(encoding="utf-8")
+          cache_meta = '''    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            <meta http-equiv="Expires" content="0" />
+          '''
+          if "http-equiv=\"Cache-Control\"" not in text:
+            text = text.replace("    <meta charset=\"UTF-8\" />\n", "    <meta charset=\"UTF-8\" />\n" + cache_meta)
+            index.write_text(text, encoding="utf-8")
+            print("Added browser no-cache metadata to deployed index.html")
+          else:
+            print("Browser no-cache metadata already present")
+          PY
+
           # SPA 深链接回退；禁用 Jekyll，避免忽略部分静态资源
           cp _site/index.html _site/404.html
           touch _site/.nojekyll
