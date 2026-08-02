@@ -154,7 +154,6 @@
     "add-single": "单个添加",
     "add-batch": "批量添加",
     "category": "分类",
-    "legend": "图例",
     "zip-package": "模型压缩包",
     "name-from-zip": "上传压缩包后自动填充",
     "zip-tip": "请上传符合规范的 3D 模型 ZIP 压缩包。压缩包内必须包含与压缩包同名的 .obj 模型文件；如包含材质文件，.mtl 文件也必须与压缩包同名，纹理图片为可选文件，请确保 .mtl 中引用的贴图文件一并放入压缩包内。",
@@ -1057,7 +1056,8 @@
       "yellowLemonTiles": "黄柠檬瓷砖",
       "yellowPearsAndWhiteTiles": "黄梨与白瓷砖",
       "yellowPearsTiles": "黄梨瓷砖"
-    }
+    },
+    "thumbnail": "缩略图"
   },
   "snap": {
     "magnet-to-point": "吸附到点",

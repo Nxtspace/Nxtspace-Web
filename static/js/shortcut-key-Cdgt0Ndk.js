@@ -1,1 +1,0 @@
-import{m as e}from"./framework-B4uUSF2p.js";import{t}from"./hotkey-list-BFtHFpIW.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};

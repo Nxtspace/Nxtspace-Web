@@ -154,7 +154,6 @@
     "add-single": "Add Single",
     "add-batch": "Add Batch",
     "category": "Category",
-    "legend": "Legend",
     "zip-package": "Model ZIP Package",
     "name-from-zip": "Auto-filled after uploading ZIP",
     "zip-tip": "Please upload a compliant 3D model ZIP package. The archive must contain a .obj file with the same name as the ZIP; if a material file is included, the .mtl file must also share the same name. Texture images are optional—ensure any textures referenced by the .mtl are included in the archive.",
@@ -1057,7 +1056,8 @@
       "yellowLemonTiles": "Yellow lemon tiles",
       "yellowPearsAndWhiteTiles": "Yellow pears and white tiles",
       "yellowPearsTiles": "Yellow pears tiles"
-    }
+    },
+    "thumbnail": "Thumbnail"
   },
   "snap": {
     "magnet-to-point": "Magnet To Point",
