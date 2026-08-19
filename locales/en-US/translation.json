@@ -11,6 +11,7 @@
     "minimize": "Minimize",
     "maximize": "Maximize",
     "close": "Close",
+    "close-project": "Close Project",
     "restore": "Restore",
     "always-on-top": "Always On Top",
     "confirm": "Confirm",
@@ -18,6 +19,12 @@
     "add": "Add",
     "clear": "Clear",
     "full-screen": "Full Screen",
+    "exit-full-screen": "Exit Full Screen",
+    "lock-orientation": "Lock Orientation",
+    "unlock-orientation": "Unlock Orientation",
+    "enter-preview": "Enter Preview",
+    "enter-editor": "Enter Editor",
+    "project-info": "Project Info",
     "undo": "Undo",
     "redo": "Redo",
     "save": "Save",
@@ -51,6 +58,7 @@
   "label": {
     "texture": "Texture",
     "title": "Title",
+    "description": "Description",
     "fill": "Fill",
     "mode": "Type",
     "color": "Color",
@@ -129,7 +137,9 @@
     "clear-canvas": "Clear Canvas",
     "clear-canvas-description": "This will clear all content on the current canvas. Continue?",
     "new-project": "New Project",
-    "new-project-description": "This will clear the current project and create a new one. Continue?"
+    "new-project-description": "This will clear the current project and create a new one. Continue?",
+    "close-project": "Close Project",
+    "close-project-description": "Close the current project and return to the home screen?"
   },
   "scene": {
     "2d-frame-rate": "2D Frame Rate",
@@ -191,6 +201,7 @@
       "Wall": "Wall",
       "Craftsman door": "Craftsman Door",
       "Door": "Door",
+      "Doorway": "Doorway",
       "Double door with panes": "Double Door With Panes",
       "Double door": "Double Door",
       "Double door with small part": "Double Door With Small Part",
@@ -1137,7 +1148,11 @@
   },
   "file": {
     "export-success": "Exported {{fileName}}",
-    "import-success": "Imported {{fileName}}"
+    "export-success-android": "Exported {{fileName}} to Downloads/Nxtspace",
+    "export-success-ios": "Exported {{fileName}} to the Files app (On My iPhone → Nxtspace Mobile → Download → Nxtspace)",
+    "import-success": "Imported {{fileName}}",
+    "exporting": "Exporting...",
+    "importing": "Importing..."
   },
   "zoom": {
     "zoom-in": "Zoom In",
@@ -1307,7 +1322,18 @@
       "please-select-theme": "Please select a theme",
       "auto-save": "Auto Save"
     },
-    "restore-defaults": "Restore Defaults"
+    "restore-defaults": "Restore Defaults",
+    "amap": {
+      "name": "AMap",
+      "key": "Web Key (JS API)",
+      "key-placeholder": "Enter Web (JS API) Key",
+      "security-code": "Security Key (JS API only)",
+      "security-code-placeholder": "securityJsCode; Web Service keys have none",
+      "web-service-key": "Web Service Key (search / static map)",
+      "web-service-key-placeholder": "Enter Web Service Key (no security code; not the JS API Key)",
+      "hint": "One-click Exterior needs two keys: (1) Web JS API + securityJsCode for the map picker; (2) Web Service Key (no security code) for place search and static basemap. Do not mix them.",
+      "console-link": "Open Console"
+    }
   },
   "element-prototype": {
     "wall": "Wall",
@@ -1322,5 +1348,35 @@
     "viewer": "Viewer",
     "shortcut-key": "Shortcut Key",
     "not-found": "Not Found"
+  },
+  "exterior": {
+    "title": "One-click Exterior",
+    "description": "Select an area on the map to generate surrounding buildings, roads, and a basemap",
+    "select-range": "Select Range",
+    "search-placeholder": "Search a place name",
+    "search": "Search",
+    "range-size": "Selection size",
+    "create-objects": "Create Objects",
+    "basemap": "Basemap",
+    "basemap-scale": "Basemap scale",
+    "buildings": "Buildings",
+    "building-color": "Building color",
+    "building-opacity": "Building opacity",
+    "roads": "Roads",
+    "road-highway": "Highway",
+    "road-primary": "Primary road",
+    "road-secondary": "Secondary road",
+    "road-ordinary": "Ordinary road",
+    "map-hint": "Drag the box to move; use the slider or scroll to resize",
+    "map-load-failed": "Failed to load AMap",
+    "retry": "Retry",
+    "no-result": "No matching places found",
+    "search-failed": "Place search failed",
+    "generate-success": "Generated {{count}} buildings and {{roads}} roads",
+    "generate-failed": "Failed to generate exterior",
+    "generate-timeout": "Exterior generation timed out, please try again",
+    "generating": "Generating…",
+    "clear": "Clear Exterior",
+    "cleared": "Exterior cleared"
   }
 }

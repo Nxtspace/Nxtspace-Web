@@ -11,6 +11,7 @@
     "minimize": "最小化",
     "maximize": "最大化",
     "close": "关闭",
+    "close-project": "关闭项目",
     "restore": "恢复",
     "always-on-top": "窗口置顶",
     "confirm": "确认",
@@ -18,6 +19,12 @@
     "add": "添加",
     "clear": "清除",
     "full-screen": "全屏",
+    "exit-full-screen": "退出全屏",
+    "lock-orientation": "方向锁定",
+    "unlock-orientation": "方向解锁",
+    "enter-preview": "进入预览",
+    "enter-editor": "进入编辑",
+    "project-info": "项目信息",
     "undo": "撤销",
     "redo": "恢复",
     "save": "保存",
@@ -51,6 +58,7 @@
   "label": {
     "texture": "纹理",
     "title": "标题",
+    "description": "描述",
     "fill": "填充",
     "mode": "类型",
     "color": "颜色",
@@ -129,7 +137,9 @@
     "clear-canvas": "清空画布",
     "clear-canvas-description": "此操作将清除当前画布上的所有内容，是否继续？",
     "new-project": "新建项目",
-    "new-project-description": "此操作将清空当前项目并创建新项目，是否继续？"
+    "new-project-description": "此操作将清空当前项目并创建新项目，是否继续？",
+    "close-project": "关闭项目",
+    "close-project-description": "确定关闭当前项目并返回首页吗？"
   },
   "scene": {
     "2d-frame-rate": "二维帧率",
@@ -191,6 +201,7 @@
       "Wall": "墙",
       "Craftsman door": "工匠门",
       "Door": "门",
+      "Doorway": "门洞",
       "Double door with panes": "带玻璃格窗的双开门",
       "Double door": "双开门",
       "Double door with small part": "带小部分的双开门",
@@ -1137,7 +1148,11 @@
   },
   "file": {
     "export-success": "已导出 {{fileName}}",
-    "import-success": "已导入 {{fileName}}"
+    "export-success-android": "已导出 {{fileName}} 到「下载/Nxtspace」",
+    "export-success-ios": "已导出 {{fileName}} 到「文件」App（我的 iPhone → Nxtspace Mobile → Download → Nxtspace）",
+    "import-success": "已导入 {{fileName}}",
+    "exporting": "正在导出...",
+    "importing": "正在导入..."
   },
   "zoom": {
     "zoom-in": "放大",
@@ -1307,7 +1322,18 @@
       "please-select-theme": "请选择主题",
       "auto-save": "自动保存"
     },
-    "restore-defaults": "恢复默认"
+    "restore-defaults": "恢复默认",
+    "amap": {
+      "name": "高德地图",
+      "key": "Web端 Key (JS API)",
+      "key-placeholder": "请输入「Web端(JS API)」Key",
+      "security-code": "安全密钥（仅 JS API）",
+      "security-code-placeholder": "securityJsCode；Web服务 Key 没有此项",
+      "web-service-key": "Web服务 Key（搜索 / 静态地图）",
+      "web-service-key-placeholder": "请输入「Web服务」Key（无安全密钥；勿填 JS API Key）",
+      "hint": "一键外景需要两类 Key：① Web端(JS API)+安全密钥用于地图选区；② Web服务 Key（无安全密钥）用于地点搜索与静态底图。两类不要混用。",
+      "console-link": "打开控制台"
+    }
   },
   "element-prototype": {
     "wall": "墙体",
@@ -1322,5 +1348,35 @@
     "viewer": "预览",
     "shortcut-key": "快捷键",
     "not-found": "404"
+  },
+  "exterior": {
+    "title": "一键外景",
+    "description": "在地图上选择区域，快速生成周边建筑、道路与底图",
+    "select-range": "选择范围",
+    "search-placeholder": "输入位置名称搜索",
+    "search": "搜索",
+    "range-size": "选区边长",
+    "create-objects": "创建对象",
+    "basemap": "底图",
+    "basemap-scale": "底图扩展",
+    "buildings": "建筑",
+    "building-color": "建筑颜色",
+    "building-opacity": "建筑透明度",
+    "roads": "道路",
+    "road-highway": "高速路",
+    "road-primary": "主干路",
+    "road-secondary": "次干路",
+    "road-ordinary": "普通路",
+    "map-hint": "拖动选框移动；滑条或滚轮缩放选区",
+    "map-load-failed": "高德地图加载失败",
+    "retry": "重试",
+    "no-result": "未找到相关位置",
+    "search-failed": "地点搜索失败",
+    "generate-success": "已生成 {{count}} 栋建筑、{{roads}} 条道路",
+    "generate-failed": "外景生成失败",
+    "generate-timeout": "外景生成超时，请稍后重试",
+    "generating": "生成中…",
+    "clear": "清除外景",
+    "cleared": "已清除外景"
   }
 }
