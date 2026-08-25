@@ -119,7 +119,7 @@
     "view-2d": "2D",
     "menu": "Menu"
   },
-  "promp": {
+  "prompt": {
     "last-saved": "Last Saved",
     "scene-scaling": "Scene Scaling",
     "ratio": "Ratio",
@@ -1071,18 +1071,23 @@
     "thumbnail": "Thumbnail"
   },
   "snap": {
-    "magnet-to-point": "Magnet To Point",
-    "magnet-to-line": "Magnet To Line",
-    "align-to-line": "Align To Line",
-    "align-to-ruler": "Align To Ruler",
-    "snap-to-grid": "Snap To Grid"
+    "snap-to-vertex": "Corner Snapping",
+    "align-to-axis": "Element Alignment Snapping",
+    "snap-to-edge": "Edge Snapping",
+    "snap-to-guide": "Guide Snapping",
+    "snap-to-grid": "Grid Snapping",
+    "snap-to-vertex-tip": "Snap to wall endpoints and object corners while dragging or drawing",
+    "align-to-axis-tip": "Locks position when aligned horizontally or vertically with other elements' endpoints and corners",
+    "snap-to-edge-tip": "Snaps onto wall and object edges when nearby",
+    "snap-to-guide-tip": "Snaps to manually created horizontal, vertical, or circular guides",
+    "snap-to-grid-tip": "Snaps to the nearest grid intersection"
   },
   "collapsible": {
     "2d-view": "2D View",
     "3d-view": "3D View",
     "guides": "Guides",
     "level": "Level",
-    "groups": "Groups",
+    "groups": "Elements",
     "properties": "Properties",
     "element": "Element",
     "wall-default-settings": {
@@ -1368,6 +1373,8 @@
     "road-secondary": "Secondary road",
     "road-ordinary": "Ordinary road",
     "map-hint": "Drag the box to move; use the slider or scroll to resize",
+    "locate": "Locate current position",
+    "locate-failed": "Failed to get location, please check permission or network",
     "map-load-failed": "Failed to load AMap",
     "retry": "Retry",
     "no-result": "No matching places found",

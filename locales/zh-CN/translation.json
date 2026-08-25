@@ -114,7 +114,7 @@
     "view-2d": "二维",
     "menu": "菜单"
   },
-  "promp": {
+  "prompt": {
     "last-saved": "最后保存时间",
     "scene-scaling": "场景缩放",
     "ratio": "倍",
@@ -1071,18 +1071,23 @@
     "thumbnail": "缩略图"
   },
   "snap": {
-    "magnet-to-point": "吸附到点",
-    "magnet-to-line": "吸附到线",
-    "align-to-line": "对齐到线",
-    "align-to-ruler": "对齐到标尺",
-    "snap-to-grid": "对齐到网格"
+    "snap-to-vertex": "角点吸附",
+    "align-to-axis": "元素对齐吸附",
+    "snap-to-edge": "元素边吸附",
+    "snap-to-guide": "参考线吸附",
+    "snap-to-grid": "网格吸附",
+    "snap-to-vertex-tip": "拖动或绘制时，自动吸附到墙体端点和物体角点",
+    "align-to-axis-tip": "与其他元素的端点、角点处于同一水平或垂直位置时，自动对齐并锁定",
+    "snap-to-edge-tip": "靠近墙体或物体的边缘时，自动贴附到边上",
+    "snap-to-guide-tip": "自动吸附到手动创建的水平、垂直或圆形参考线",
+    "snap-to-grid-tip": "自动吸附到最近的网格交点"
   },
   "collapsible": {
     "2d-view": "二维视角",
     "3d-view": "三维视角",
     "guides": "参考线",
     "level": "楼层",
-    "groups": "分组",
+    "groups": "元素",
     "properties": "属性",
     "element": "元素",
     "wall-default-settings": {
@@ -1368,6 +1373,8 @@
     "road-secondary": "次干路",
     "road-ordinary": "普通路",
     "map-hint": "拖动选框移动；滑条或滚轮缩放选区",
+    "locate": "定位到当前位置",
+    "locate-failed": "定位失败，请检查定位权限或网络",
     "map-load-failed": "高德地图加载失败",
     "retry": "重试",
     "no-result": "未找到相关位置",
