@@ -1120,6 +1120,14 @@
       "ground-type": "地面类型",
       "ground-texture": "地面纹理",
       "ground-color": "地面颜色",
+      "render-quality": "画质",
+      "render-quality-high": "高画质",
+      "render-quality-balanced": "均衡",
+      "render-quality-performance": "高性能",
+      "roam-collision": "漫游碰撞",
+      "roam-collision-walls": "墙体",
+      "roam-collision-things": "物体",
+      "roam-collision-holes": "门窗",
       "color": "颜色",
       "texture": "纹理"
     }
@@ -1424,7 +1432,7 @@
     "join": "加入",
     "joining": "正在加入协同…",
     "manual-join": "手动加入",
-    "manual-hint": "支持 ip:端口/项目id?password=密码 或 ws:// 开头的完整地址",
+    "manual-hint": "支持 ip:端口/项目id 或 ws:// 开头的完整地址",
     "manual-placeholder": "ip:端口/项目id",
     "invalid-address": "地址格式无效，请检查 ip、端口与项目路径",
     "join-warning": "加入后将与远端实时同步当前场景，协同期间本地未保存的修改同样会被远端覆盖合并",

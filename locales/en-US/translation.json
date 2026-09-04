@@ -1120,6 +1120,14 @@
       "ground-type": "Ground Type",
       "ground-texture": "Ground Texture",
       "ground-color": "Ground Color",
+      "render-quality": "Quality",
+      "render-quality-high": "High Quality",
+      "render-quality-balanced": "Balanced",
+      "render-quality-performance": "Performance",
+      "roam-collision": "Roam Collision",
+      "roam-collision-walls": "Walls",
+      "roam-collision-things": "Things",
+      "roam-collision-holes": "Doors & Windows",
       "color": "Color",
       "texture": "Texture"
     }
@@ -1424,7 +1432,7 @@
     "join": "Join",
     "joining": "Joining collaboration…",
     "manual-join": "Join Manually",
-    "manual-hint": "Supports ip:port/projectId?password=xxx or a full ws:// address",
+    "manual-hint": "Supports ip:port/projectId or a full ws:// address",
     "manual-placeholder": "ip:port/projectId",
     "invalid-address": "Invalid address. Check the ip, port and project path",
     "join-warning": "Your scene will sync with peers in real time once joined; unsaved local edits may be merged with remote changes",
