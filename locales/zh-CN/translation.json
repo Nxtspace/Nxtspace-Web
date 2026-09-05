@@ -114,6 +114,14 @@
     "view-2d": "二维",
     "menu": "菜单"
   },
+  "view-helper": {
+    "right": "右",
+    "left": "左",
+    "top": "上",
+    "bottom": "下",
+    "front": "前",
+    "back": "后"
+  },
   "prompt": {
     "last-saved": "最后保存时间",
     "scene-scaling": "场景缩放",
@@ -1104,6 +1112,7 @@
     "zone-default-settings": {
       "title": "区域默认设置",
       "zone-title": "区域标题",
+      "zone-height": "区域高度",
       "mode": "区域类型",
       "texture": "区域纹理",
       "fill": "区域填充色",

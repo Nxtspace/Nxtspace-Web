@@ -119,6 +119,14 @@
     "view-2d": "2D",
     "menu": "Menu"
   },
+  "view-helper": {
+    "right": "Right",
+    "left": "Left",
+    "top": "Top",
+    "bottom": "Bottom",
+    "front": "Front",
+    "back": "Back"
+  },
   "prompt": {
     "last-saved": "Last Saved",
     "scene-scaling": "Scene Scaling",
@@ -1104,6 +1112,7 @@
     "zone-default-settings": {
       "title": "Zone Default Settings",
       "zone-title": "Zone Title",
+      "zone-height": "Zone Height",
       "mode": "Zone Type",
       "texture": "Zone Texture",
       "fill": "Zone Fill Color",
