@@ -8,275 +8,276 @@
 
 <p align="center">
   <a href="https://nxtspace.github.io/Nxtspace-Web/" target="_blank">
-    🚀 在线预览
+    🚀 Live Preview
   </a>
+</p>
+
+<p align="center">
+  🌐 <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
 </p>
 
 ---
 
 ![React](https://img.shields.io/badge/React-v19.2.5-61DAFB?logo=react&logoColor=white&style=flat-square) ![Vite](https://img.shields.io/badge/Vite-v8.0.10-646CFF?logo=vite&logoColor=white&style=flat-square) ![Three.js](https://img.shields.io/badge/Three.js-v0.183.2-000000?logo=three.js&logoColor=white&style=flat-square) [![Leafer](https://img.shields.io/github/v/release/leaferjs/leafer?label=Leafer&color=34d399r&style=flat-square)](https://www.leaferjs.com/) ![React](https://img.shields.io/badge/Typescript-v6.0.2-007ACC?logo=typescript&logoColor=white&style=flat-square) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4.3.0-06B6D4?logo=tailwindcss&logoColor=white&style=flat-square) ![Shadcn/ui](https://img.shields.io/badge/Shadcn%2Fui-v4.14.1-000000?logo=shadcnui&logoColor=white&style=flat-square)
 
-
-### 简介
-
----
-
-Nxtspace Web 是一款面向建筑行业的 3D 场景搭建工具，基于纯 Web 技术构建，无需安装即可在浏览器中使用。
-
-**核心能力：**
-
-- **二维平面图快速绘制**：墙体 / 弧墙 / 门窗 / 区域，配合吸附、顶点编辑、尺寸标注、参考线 / 参考图，高效还原户型
-- **实时三维可视化**：2D 绘制即时生成 3D 场景，支持仿真 / 白模 / 线框三种渲染风格，娃娃屋模式、漫游模式、多视角快速切换
-- **丰富的元件与模型库**：内置结构元件 + 分类室内模型，支持自定义模型导入（GLB / ZIP）
-- **多格式导入导出**：NXTS 项目文件、GLTF / GLB / OBJ 三维模型、PNG 截图，方便对接其他工具链
-- **多端适配**：电脑浏览器完整功能体验，手机 / 平板触屏友好操作
-
-无论您是建筑师、室内设计师、地产策划还是产品演示者，都能零门槛上手，快速产出可交互、可分享的 3D 建筑场景 Demo。
-
-
-### 模型
+### Introduction
 
 ---
 
-Nxtspace Web 支持导入和管理 3D 模型资源，为建筑场景搭建提供丰富的模型库。
+Nxtspace Web is a 3D scene-building tool for the architecture industry. Built entirely on web technologies, it runs directly in the browser with no installation required.
 
-目前支持使用 Sweet Home 3D 免费模型资源，包括：
+**Core capabilities:**
 
-- 家具模型
-- 室内装饰模型
-- 灯具模型
-- 植物模型
-- 厨房模型
-- 卫浴模型
-- 门窗模型
-- 建筑组件模型
+- **2D floor plan drafting**: walls / arc walls / doors & windows / regions, with snapping, vertex editing, dimension annotations, and reference lines / reference images to efficiently recreate any floor plan.
+- **Real-time 3D visualization**: drawings in 2D instantly generate a 3D scene with three rendering styles — realistic, white-model, and wireframe. Quickly switch between dollhouse mode, walk mode, and multiple camera views.
+- **Rich component & model library**: built-in structural components plus a categorized indoor model library, with support for custom model import (GLB / ZIP).
+- **Multi-format import & export**: NXTS project files, GLTF / GLB / OBJ 3D models, and PNG screenshots, for easy integration with other toolchains.
+- **Multi-platform support**: full-featured experience on desktop browsers, with touch-friendly operations on phones and tablets.
 
-模型来源：
+Whether you are an architect, interior designer, real-estate planner, or product demonstrator, you can get started with zero learning curve and quickly produce interactive, shareable 3D architectural scene demos.
 
-- Sweet Home 3D 官方免费模型库
-- 用户自定义 3D 模型
+### Models
 
-Sweet Home 3D 免费模型：
+---
+
+Nxtspace Web supports importing and managing 3D model assets, providing a rich model library for architectural scene building.
+
+Currently, it supports free model resources from Sweet Home 3D, including:
+
+- Furniture models
+- Interior decoration models
+- Lighting models
+- Plant models
+- Kitchen models
+- Bathroom models
+- Door & window models
+- Architectural component models
+
+Model sources:
+
+- Sweet Home 3D official free model library
+- User-defined 3D models
+
+Sweet Home 3D free models:
 
 https://www.sweethome3d.com/freeModels.jsp
 
-
-### 功能
+### Features
 
 ---
 
-Tips: ⚪ 筹备中 🟡 进行中 🟢 已完成
+Tips: ⚪ Planning 🟡 In progress 🟢 Done
 
-- 🟢 编辑器核心
-  - 🟢 二维平面图
-    - 🟢 墙体绘制（直线墙 / 弧墙一键转换，绘制中可取消）
-    - 🟢 门洞与窗户（插入墙体自动开洞，含单开门 / 双开门 / 门洞 / 多款式）
-    - 🟢 区域绘制（闭合房间自动计算面积，多边形区域支持）
-    - 🟢 家具摆放（拖拽模型进场景 + 实时吸附对齐 + 落点预览）
-    - 🟢 顶点编辑（墙体端点 / 拐点拖拽微调，墙体自动重算）
-    - 🟢 尺寸标注（墙体长度 / 角度实时显示，独立开关切换显隐）
-    - 🟢 参考线（水平 / 垂直辅助线，颜色自定义，按层管理）
-    - 🟢 参考图（CAD / 平面图 / 任意图片作为底图描边，可缩放/平移/透明度调整）
-    - 🟢 网格与标尺（网格开关 + 吸附，横纵标尺随缩放/平移同步）
-    - 🟢 右键菜单（上下文快捷操作：复制/粘贴/删除/分组/属性/重命名）
-    - 🟢 可交互小地图缩略图（拖动聚焦框平移主场景，滚轮以光标为锚点缩放）
+- 🟢 Editor core
+  - 🟢 2D floor plan
+    - 🟢 Wall drawing (straight walls / arc wall one-click conversion, cancellable mid-drawing)
+    - 🟢 Door and window openings (auto-cut when inserted into walls, single-leaf door / double-leaf door / doorway / multiple styles)
+    - 🟢 Region drawing (closed rooms auto-calculate area, polygon regions supported)
+    - 🟢 Furniture placement (drag models into the scene + real-time snapping & alignment + landing-point preview)
+    - 🟢 Vertex editing (drag wall endpoints / corners to fine-tune, walls auto-recalculate)
+    - 🟢 Dimension annotations (wall length / angle shown in real time, independent show/hide toggle)
+    - 🟢 Reference lines (horizontal / vertical guides, customizable color, layer-managed)
+    - 🟢 Reference images (use CAD / floor plans / any image as a tracing underlay, with zoom / pan / opacity controls)
+    - 🟢 Grid and rulers (grid toggle + snapping, rulers sync with zoom / pan)
+    - 🟢 Right-click menu (context actions: copy / paste / delete / group / properties / rename)
+    - 🟢 Interactive minimap thumbnail (drag the focus frame to pan the main scene, scroll-wheel zoom anchored on the cursor)
 
-  - 🟢 三维可视化
-    - 🟢 2D / 3D 视图一键切换
-    - 🟢 正交 / 透视投影切换
-    - 🟢 多种视角快速切换（正视 / 侧视 / 俯视 / 仰视 / 左视 / 右视 / 等轴测）
-    - 🟢 视角辅助球（右下角立方体，点击面/边/角即切换视角）
-    - 🟢 娃娃屋模式（按相机位置实时背面剔除墙体，俯视时自动看到室内）
-    - 🟢 漫游模式
-      - 🟢 第一人称（鼠标锁定 + WASD 移动）
-      - 🟢 第三人称（轨道相机环绕）
-    - 🟢 渲染风格
-      - 🟢 仿真风格（PBR 材质贴图 + 灯光）
-      - 🟢 白模风格（材质 + 线框叠加）
-      - 🟢 线框风格（纯线框模式）
-    - 🟢 天空与地面（纯色 / 贴图两种模式，50+ 纹理可选）
-    - 🟢 右侧栏 3D 实时预览
-    - 🟢 3D 场景缩略图
+  - 🟢 3D visualization
+    - 🟢 One-click 2D / 3D view switching
+    - 🟢 Orthographic / perspective projection toggle
+    - 🟢 Quick view switching (front / side / top / bottom / left / right / isometric)
+    - 🟢 View-cube helper (bottom-right cube, click a face / edge / corner to switch the view)
+    - 🟢 Dollhouse mode (auto back-face culling of walls based on camera position, see interior when looking from above)
+    - 🟢 Walk mode
+      - 🟢 First-person (mouse lock + WASD movement)
+      - 🟢 Third-person (orbit camera around the target)
+    - 🟢 Rendering styles
+      - 🟢 Realistic (PBR materials & textures + lighting)
+      - 🟢 White-model (materials + wireframe overlay)
+      - 🟢 Wireframe (pure wireframe mode)
+    - 🟢 Sky and ground (solid color / texture, 50+ texture options)
+    - 🟢 Right-side 3D real-time preview
+    - 🟢 3D scene thumbnail
 
-  - 🟢 只读预览
-    - 🟢 三维查看（不含任何编辑操作）
-    - 🟢 搜索定位、视角切换、风格化渲染
+  - 🟢 Read-only preview
+    - 🟢 3D viewing (no editing operations)
+    - 🟢 Search & locate, view switching, stylized rendering
 
-- 🟢 元件库与模型
-  - 🟢 结构元件
-    - 🟢 墙体（厚度 / 高度 / 材质默认设置）
-    - 🟢 门洞（单开门 / 双开门 / 无门）
-    - 🟢 窗户（尺寸 / 窗台 / 样式可调）
-    - 🟢 区域（房间参数化默认设置）
+- 🟢 Component library & models
+  - 🟢 Structural components
+    - 🟢 Walls (thickness / height / material defaults)
+    - 🟢 Door openings (single-leaf door / double-leaf door / no door)
+    - 🟢 Windows (size / sill height / style adjustable)
+    - 🟢 Regions (parameterized room defaults)
 
-  - 🟢 室内模型库
-    - 🟢 分类浏览（客厅 / 卧室 / 厨房 / 卫浴 / 办公 / 其他）
-    - 🟢 搜索过滤（按名称快速检索元件）
-    - 🟢 自定义模型导入（上传 GLB / ZIP 包，填写尺寸、分类、名称）
+  - 🟢 Indoor model library
+    - 🟢 Category browsing (living room / bedroom / kitchen / bathroom / office / other)
+    - 🟢 Search filtering (quickly find components by name)
+    - 🟢 Custom model import (upload GLB / ZIP packages, set size, category, and name)
 
-- 🟢 编辑与操作
-  - 🟢 基础操作
-    - 🟢 指针工具（切换回选择态，退出绘制模式）
-    - 🟢 选择（多选 / 框选 / 点选 / 反选）
-    - 🟢 移动、旋转、缩放（三轴 Gizmo 手柄）
-    - 🟢 删除
-    - 🟢 复制、剪切、粘贴（含落点预览，粘贴项独立偏移防重叠）
-    - 🟢 撤销 / 重做（最大 50 步历史栈）
-    - 🟢 全局元件搜索（弹窗搜索所有楼层的墙/洞/家具/区域，定位 + 自动选中 + 聚焦）
-    - 🟢 楼层快速切换（下拉选择器 + 搜索过滤，跨楼层跳层编辑）
+- 🟢 Editing & operations
+  - 🟢 Basic operations
+    - 🟢 Pointer tool (switch back to selection state, exit drawing mode)
+    - 🟢 Select (multi-select / box-select / point-select / invert selection)
+    - 🟢 Move, rotate, scale (three-axis Gizmo handles)
+    - 🟢 Delete
+    - 🟢 Copy, cut, paste (with landing-point preview, pasted items are offset to avoid overlap)
+    - 🟢 Undo / redo (up to 50-step history stack)
+    - 🟢 Global component search (search all floors' walls / openings / furniture / regions, locate + auto-select + focus)
+    - 🟢 Quick floor switching (dropdown selector + search filter, jump across floors for editing)
 
-  - 🟢 分组与图层
-    - 🟢 元件分组（选中元素创建逻辑组，整体操作）
-    - 🟢 解组
-    - 🟢 多楼层图层（独立编辑、切换、显隐控制）
-    - 🟢 元素分组列表（层级树状管理）
+  - 🟢 Groups & layers
+    - 🟢 Component grouping (create logical groups from selected elements, operate as a whole)
+    - 🟢 Ungroup
+    - 🟢 Multi-floor layers (independent editing, switching, and visibility control)
+    - 🟢 Element group list (hierarchical tree-style management)
 
-  - 🟢 自动吸附
-    - 🟢 顶点吸附（端点 / 拐点自动对齐）
-    - 🟢 边线吸附（沿墙体边线贴合）
-    - 🟢 线段吸附（整段长度对齐）
-    - 🟢 网格吸附（整数步长对齐）
-    - 🟢 参考线吸附（辅助线磁吸）
-    - 🟢 吸附开关（总开关 + 分项配置）
+  - 🟢 Auto-snapping
+    - 🟢 Vertex snapping (auto-align to endpoints / corners)
+    - 🟢 Edge snapping (stick to wall edges)
+    - 🟢 Segment snapping (align to full segment length)
+    - 🟢 Grid snapping (align to integer steps)
+    - 🟢 Reference-line snapping (magnet to guides)
+    - 🟢 Snapping toggles (master switch + individual configuration)
 
-- 🟢 场景与属性
-  - 🟢 右侧栏快捷工具
-    - 🟢 放大 / 缩小按钮
-    - 🟢 聚焦选区 / 聚焦全局按钮
-    - 🟢 吸附分项弹出面板（点/线/线段/网格/参考线 5 项独立勾选）
+- 🟢 Scene & properties
+  - 🟢 Right-side shortcut tools
+    - 🟢 Zoom in / zoom out buttons
+    - 🟢 Focus selection / focus all button
+    - 🟢 Snapping sub-panel (5 independent checkboxes: point / line / segment / grid / reference line)
 
-  - 🟢 属性面板
-    - 🟢 墙体属性（厚度 / 高度 / 弧墙细分 / 颜色 / 材质）
-    - 🟢 门窗属性（尺寸 / 开启方向 / 样式 / 离地高度）
-    - 🟢 家具属性（尺寸 / 旋转 / 位置 / 替换模型）
-    - 🟢 区域属性（名称 / 颜色 / 材质）
-    - 🟢 分组属性（整体缩放 / 重命名）
+  - 🟢 Properties panel
+    - 🟢 Wall properties (thickness / height / arc subdivision / color / material)
+    - 🟢 Door & window properties (size / opening direction / style / sill height)
+    - 🟢 Furniture properties (size / rotation / position / replace model)
+    - 🟢 Region properties (name / color / material)
+    - 🟢 Group properties (overall scale / rename)
 
-  - 🟢 场景设置
-    - 🟢 场景尺寸（长 / 宽）
-    - 🟢 天空（颜色 / 贴图 2 种模式，7+ 天空纹理）
-    - 🟢 地面（颜色 / 贴图 2 种模式，60+ 地面 / 墙面 / 地板纹理）
+  - 🟢 Scene settings
+    - 🟢 Scene size (length / width)
+    - 🟢 Sky (color / texture, 2 modes, 7+ sky textures)
+    - 🟢 Ground (color / texture, 2 modes, 60+ ground / wall / floor textures)
 
-  - 🟢 墙体默认设置
-    - 🟢 墙体显隐（相机背面剔除开关）
-    - 🟢 自动闭合（绘制首尾自动连接）
-    - 🟢 幽灵墙（辅助预览模式）
-    - 🟢 默认高度
-    - 🟢 默认透明度
-    - 🟢 单位（厘米 / 米）
-    - 🟢 内侧材质纹理（40+ 墙面纹理可选）
-    - 🟢 外侧材质纹理（40+ 墙面纹理可选）
+  - 🟢 Wall defaults
+    - 🟢 Wall visibility (back-face culling toggle)
+    - 🟢 Auto-close (auto-connect start and end while drawing)
+    - 🟢 Ghost walls (auxiliary preview mode)
+    - 🟢 Default height
+    - 🟢 Default opacity
+    - 🟢 Units (centimeters / meters)
+    - 🟢 Interior material textures (40+ wall textures)
+    - 🟢 Exterior material textures (40+ wall textures)
 
-  - 🟢 区域默认设置
-    - 🟢 名称前缀（新建区域自动命名）
-    - 🟢 填充模式（纯色 / 贴图）
-    - 🟢 填充颜色
-    - 🟢 地面纹理（60+ 地面 / 地板纹理可选）
-    - 🟢 透明度
+  - 🟢 Region defaults
+    - 🟢 Name prefix (auto-name new regions)
+    - 🟢 Fill mode (solid color / texture)
+    - 🟢 Fill color
+    - 🟢 Ground textures (60+ ground / floor textures)
+    - 🟢 Opacity
 
-- 🟢 文件与数据
-  - 🟢 导入
-    - 🟢 NXTS 格式（项目文件）
+- 🟢 Files & data
+  - 🟢 Import
+    - 🟢 NXTS format (project file)
 
-  - 🟢 导出
-    - 🟢 NXTS 格式（完整项目 JSON，全量场景下载）
-    - 🟢 GLTF 格式（JSON 结构 + 贴图分离）
-    - 🟢 GLB 格式（二进制单文件，贴图嵌入）
-    - 🟢 OBJ 格式（纯几何体导出）
-    - 🟢 2D / 3D 截图（PNG 格式，自动命名下载）
+  - 🟢 Export
+    - 🟢 NXTS format (complete project JSON, full-scene download)
+    - 🟢 GLTF format (JSON structure with separate textures)
+    - 🟢 GLB format (single binary file with embedded textures)
+    - 🟢 OBJ format (pure geometry export)
+    - 🟢 2D / 3D screenshot (PNG format, auto-named download)
 
-  - 🟢 项目管理
-    - 🟢 新建项目
-    - 🟢 保存
-    - 🟢 项目重命名
-    - 🟢 清空场景
-    - 🟢 关闭页面前未保存变更提示（Web 端）
+  - 🟢 Project management
+    - 🟢 New project
+    - 🟢 Save
+    - 🟢 Rename project
+    - 🟢 Clear scene
+    - 🟢 Unsaved-changes prompt before closing the page (Web)
 
-- 🟢 偏好设置
-  - 🟢 外观
-    - 🟢 浅色 / 深色主题（跟随系统 + 手动切换）
-    - 🟢 界面语言（简体中文 / English，下拉切换即时生效）
+- 🟢 Preferences
+  - 🟢 Appearance
+    - 🟢 Light / dark theme (follow system + manual switch)
+    - 🟢 UI language (Simplified Chinese / English, dropdown takes effect immediately)
 
-  - 🟢 2D 视图
-    - 🟢 滚轮缩放速度（0.1× ~ 5× 滑块）
-    - 🟢 拖拽平移速度（0.1× ~ 5× 滑块）
-    - 🟢 拖拽动画开关（是否启用惯性缓动）
+  - 🟢 2D view
+    - 🟢 Mouse-wheel zoom speed (0.1× ~ 5× slider)
+    - 🟢 Drag pan speed (0.1× ~ 5× slider)
+    - 🟢 Drag animation toggle (enable inertia easing)
 
-  - 🟢 3D 视图
-    - 🟢 鼠标交互预设（左键平移/右键旋转 或 左键旋转/右键平移）
-    - 🟢 滚轮缩放速度（0.1× ~ 5× 滑块）
-    - 🟢 平移速度（0.1× ~ 5× 滑块）
-    - 🟢 旋转速度（0.1× ~ 5× 滑块）
-    - 🟢 鼠标惯性开关 + 阻尼系数（0.01 ~ 1.0 滑块）
-    - 🟢 缩放至光标开关（滚轮以鼠标位置为锚点缩放）
-    - 🟢 启用平移 / 启用缩放 / 启用旋转（3 项独立开关）
-    - 🟢 屏幕空间平移开关
+  - 🟢 3D view
+    - 🟢 Mouse interaction preset (left-drag pan / right-drag rotate OR left-drag rotate / right-drag pan)
+    - 🟢 Mouse-wheel zoom speed (0.1× ~ 5× slider)
+    - 🟢 Pan speed (0.1× ~ 5× slider)
+    - 🟢 Rotation speed (0.1× ~ 5× slider)
+    - 🟢 Mouse inertia toggle + damping factor (0.01 ~ 1.0 slider)
+    - 🟢 Zoom-to-cursor toggle (scroll wheel zooms anchored at the mouse position)
+    - 🟢 Enable pan / enable zoom / enable rotate (3 independent toggles)
+    - 🟢 Screen-space pan toggle
 
-  - 🟢 其他
-    - 🟢 自动保存开关（手动确认后写入设置）
-    - 🟢 一键恢复默认视图设置
+  - 🟢 Other
+    - 🟢 Auto-save toggle (write settings after manual confirmation)
+    - 🟢 One-click restore default view settings
 
-  - 🟢 单位
-    - 🟢 公制单位（厘米 / 米），属性面板统一换算
+  - 🟢 Units
+    - 🟢 Metric units (centimeters / meters), unified conversion in the properties panel
 
-- 🟢 快捷键
-  - 🟢 项目操作
-    - 🟢 新建项目（⌘/Ctrl + ⌥/Alt + N）
-    - 🟢 保存（⌘/Ctrl + S）
-    - 🟢 重命名（⌘/Ctrl + R）
-    - 🟢 撤销（⌘/Ctrl + Z）
-    - 🟢 重做（⌘/Ctrl + Y）
+- 🟢 Shortcuts
+  - 🟢 Project operations
+    - 🟢 New project (⌘/Ctrl + ⌥/Alt + N)
+    - 🟢 Save (⌘/Ctrl + S)
+    - 🟢 Rename (⌘/Ctrl + R)
+    - 🟢 Undo (⌘/Ctrl + Z)
+    - 🟢 Redo (⌘/Ctrl + Y)
 
-  - 🟢 编辑操作
-    - 🟢 复制（⌘/Ctrl + C）
-    - 🟢 剪切（⌘/Ctrl + X）
-    - 🟢 粘贴（⌘/Ctrl + V）
-    - 🟢 删除（Backspace / Delete）
-    - 🟢 分组（⌘/Ctrl + G）
-    - 🟢 解组（⌘/Ctrl + Shift + G）
-    - 🟢 取消绘制（Esc）
+  - 🟢 Edit operations
+    - 🟢 Copy (⌘/Ctrl + C)
+    - 🟢 Cut (⌘/Ctrl + X)
+    - 🟢 Paste (⌘/Ctrl + V)
+    - 🟢 Delete (Backspace / Delete)
+    - 🟢 Group (⌘/Ctrl + G)
+    - 🟢 Ungroup (⌘/Ctrl + Shift + G)
+    - 🟢 Cancel drawing (Esc)
 
-  - 🟢 视图操作
-    - 🟢 切换 2D / 3D（⌘/Ctrl + /）
-    - 🟢 放大（⌘/Ctrl + [）
-    - 🟢 缩小（⌘/Ctrl + ]）
-    - 🟢 聚焦全局（⌘/Ctrl + 9）
-    - 🟢 聚焦选区（⌘/Ctrl + 0）
-    - 🟢 搜索元件（⌘/Ctrl + J）
-    - 🟢 全屏切换
+  - 🟢 View operations
+    - 🟢 Toggle 2D / 3D (⌘/Ctrl + /)
+    - 🟢 Zoom in (⌘/Ctrl + [)
+    - 🟢 Zoom out (⌘/Ctrl + ])
+    - 🟢 Focus all (⌘/Ctrl + 9)
+    - 🟢 Focus selection (⌘/Ctrl + 0)
+    - 🟢 Search components (⌘/Ctrl + J)
+    - 🟢 Fullscreen toggle
 
-- 🟢 状态栏与信息
-  - 🟢 场景信息卡片（鼠标悬停展开详情，标题实时显示当前模式）
-    - 🟢 2D / 3D 实时帧率（按等级染色：绿 / 黄 / 橙 / 红）
-    - 🟢 顶点总数
-    - 🟢 线条总数
-    - 🟢 三角面片总数
-    - 🟢 纹理贴图数量
-    - 🟢 物体数量
-  - 🟢 当前场景缩放比例
-  - 🟢 拖拽时实时坐标显示
-  - 🟢 场景范围 / 边界
-  - 🟢 最近保存时间
-  - 🟢 应用版本号
-  - 🟢 错误 / 警告计数提示（点击跳转到日志面板）
-  - 🟢 底部快捷键提示条（根据当前绘制模式动态展示可用快捷键）
+- 🟢 Status bar & info
+  - 🟢 Scene info card (hover to expand details, title shows the current mode in real time)
+    - 🟢 2D / 3D real-time FPS (color-coded by level: green / yellow / orange / red)
+    - 🟢 Total vertex count
+    - 🟢 Total line count
+    - 🟢 Total triangle count
+    - 🟢 Texture map count
+    - 🟢 Object count
+  - 🟢 Current scene zoom ratio
+  - 🟢 Real-time coordinate display while dragging
+  - 🟢 Scene extents / bounds
+  - 🟢 Last save time
+  - 🟢 Application version
+  - 🟢 Error / warning count indicator (click to jump to the log panel)
+  - 🟢 Bottom shortcut hint bar (dynamically shows available shortcuts for the current drawing mode)
 
-- 🟢 帮助与引导
-  - 🟢 快捷键说明页（独立路由，完整快捷键表）
-  - 🟢 新手引导（分步覆盖：菜单栏 / 工具栏 / 模型栏 / 属性栏）
-  - 🟢 问题反馈（跳转 GitHub Issues 提交 Bug 与建议）
+- 🟢 Help & onboarding
+  - 🟢 Shortcut reference page (independent route, full shortcut table)
+  - 🟢 Getting-started tour (step-by-step overlays: menu bar / toolbar / model panel / properties panel)
+  - 🟢 Issue feedback (jump to GitHub Issues for bug reports and suggestions)
 
-- 🟢 平台适配
-  - 🟢 桌面端
-  - 🟢 移动端响应式布局
-    - 🟢 底部面板切换按钮（元件库 / 属性 / 工具栏抽屉式）
-    - 🟢 漫游虚拟摇杆（触屏方向控制 + 旋转按钮）
-    - 🟢 横向滚动信息条（手势友好）
+- 🟢 Platform support
+  - 🟢 Desktop
+  - 🟢 Mobile responsive layout
+    - 🟢 Bottom-panel switching buttons (component library / properties / toolbar in drawer style)
+    - 🟢 Walk-mode virtual joystick (touch directional control + rotation buttons)
+    - 🟢 Horizontal scrolling info bar (gesture-friendly)
 
-- 🟡 管理
-  - 🟢 参考线管理（增删改 / 颜色 / 显隐）
-  - 🟢 多楼层管理（图层系统）
-  - 🟢 元件分组管理
-  - 🟢 属性管理
-  - 🟢 一键外景（在地图上框选矩形区域，自动拉取真实世界的建筑与道路数据，生成该区域的白模外景）
-  - ⚪ 组件（选中多个模型保存为新的组合元件，出现在模型库中可重复拖拽，支持保存/删除/重命名）
+- 🟡 Management
+  - 🟢 Reference line management (add / delete / edit / color / visibility)
+  - 🟢 Multi-floor management (layer system)
+  - 🟢 Component group management
+  - 🟢 Property management
+  - 🟢 One-click exterior (draw a rectangle on the map to auto-fetch real-world buildings & roads and generate a white-model exterior of that area)
+  - ⚪ Components (select multiple models and save them as a new combined component, appears in the model library for repeated drag-in, supports save / delete / rename)
