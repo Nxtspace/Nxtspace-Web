@@ -125,7 +125,7 @@
   "prompt": {
     "last-saved": "最后保存时间",
     "scene-scaling": "场景缩放",
-    "ratio": "倍",
+    "ratio": "x",
     "no-found": "未找到",
     "tips": "提示",
     "create-new-guide": "创建新参考线",
