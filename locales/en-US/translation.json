@@ -2351,7 +2351,9 @@
     "key-board": {
       "space-key": "Space Key",
       "right-button": "Right Button",
-      "left-button": "Left Button"
+      "left-button": "Left Button",
+      "delete-key": "Delete",
+      "backspace-key": "Backspace"
     },
     "select-operation": {
       "name": "Select Operation",

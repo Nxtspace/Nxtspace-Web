@@ -2351,7 +2351,9 @@
     "key-board": {
       "space-key": "空格键",
       "right-button": "右键",
-      "left-button": "左键"
+      "left-button": "左键",
+      "delete-key": "Delete",
+      "backspace-key": "Backspace"
     },
     "select-operation": {
       "name": "选择操作",
