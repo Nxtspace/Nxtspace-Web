@@ -220,6 +220,11 @@
     "not-custom": "Only custom models can be deleted",
     "add-success": "Model added successfully",
     "add-failed": "Failed to add model",
+    "edit-title": "Edit model",
+    "edit-success": "Model updated",
+    "edit-failed": "Failed to update model",
+    "zip-keep": "Leave empty to keep the current ZIP",
+    "not-found": "Model not found",
     "delete-success": "Model deleted",
     "delete-failed": "Failed to delete model",
     "delete-confirm-title": "Delete Model",
@@ -2140,6 +2145,14 @@
     "groups": "Elements",
     "properties": "Properties",
     "element": "Element",
+    "models": {
+      "title": "Models",
+      "search": "Search my models...",
+      "count": "{{shown}} / {{total}}",
+      "empty": "No custom models yet",
+      "empty-hint": "Add a single model or a batch ZIP to upload local 3D models.",
+      "no-match": "No matching models"
+    },
     "wall-default-settings": {
       "title": "Wall Default Settings",
       "show-walls": "Show Walls",

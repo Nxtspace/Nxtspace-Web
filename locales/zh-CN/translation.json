@@ -220,6 +220,11 @@
     "not-custom": "仅可删除自定义模型",
     "add-success": "模型添加成功",
     "add-failed": "模型添加失败",
+    "edit-title": "编辑模型",
+    "edit-success": "模型已更新",
+    "edit-failed": "更新模型失败",
+    "zip-keep": "未选择新文件则保留原压缩包",
+    "not-found": "模型不存在",
     "delete-success": "模型已删除",
     "delete-failed": "模型删除失败",
     "delete-confirm-title": "删除模型",
@@ -2140,6 +2145,14 @@
     "groups": "元素",
     "properties": "属性",
     "element": "元素",
+    "models": {
+      "title": "模型管理",
+      "search": "搜索我的模型...",
+      "count": "{{shown}} / {{total}}",
+      "empty": "暂无自定义模型",
+      "empty-hint": "可通过单个或批量添加上传本地三维模型。",
+      "no-match": "没有匹配的模型"
+    },
     "wall-default-settings": {
       "title": "墙体默认设置",
       "show-walls": "显示墙体",

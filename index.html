@@ -5,25 +5,77 @@
     <link rel="icon" type="image/x-icon" href="/icon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nxtspace</title>
-    <script type="module" crossorigin src="/static/js/index-Dp_h3iAM.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #fff;
+      }
+      html.dark {
+        color-scheme: dark;
+        background: #262626;
+      }
+      html.light {
+        color-scheme: light;
+        background: #fff;
+      }
+      #app-boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 2147483647;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #171717;
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        user-select: none;
+        pointer-events: none;
+      }
+      html.dark #app-boot-splash {
+        background: #262626;
+        color: #fafafa;
+      }
+      #app-boot-splash img {
+        width: 96px;
+        height: 96px;
+        display: block;
+        margin: 0 auto;
+        pointer-events: none;
+      }
+      #app-boot-splash .app-boot-splash-text {
+        text-align: center;
+        margin-top: 12px;
+      }
+    </style>
+    <script type="module" crossorigin src="/static/js/index-rY8ps4QR.js"></script>
     <link rel="modulepreload" crossorigin href="/static/js/rolldown-runtime-B0Z9INg1.js">
-    <link rel="modulepreload" crossorigin href="/static/js/dist-B8TsvPGQ.js">
     <link rel="modulepreload" crossorigin href="/static/js/framework-D9oHFEZ6.js">
     <link rel="modulepreload" crossorigin href="/static/js/state-vendor-CboC1wlW.js">
     <link rel="modulepreload" crossorigin href="/static/js/utils-DQ7JpJMG.js">
     <link rel="modulepreload" crossorigin href="/static/js/three-engine-CgjhIm51.js">
-    <link rel="modulepreload" crossorigin href="/static/js/post-message-constant-CZDm2yek.js">
-    <link rel="modulepreload" crossorigin href="/static/js/theme-provider-DGfJ4SUl.js">
+    <link rel="modulepreload" crossorigin href="/static/js/post-message-constant-DzdTjn5-.js">
+    <link rel="modulepreload" crossorigin href="/static/js/dist-B8TsvPGQ.js">
+    <link rel="modulepreload" crossorigin href="/static/js/theme-provider-DqwaqdEt.js">
     <link rel="modulepreload" crossorigin href="/static/js/leafer-engine-COQ_u_1l.js">
     <link rel="modulepreload" crossorigin href="/static/js/rapier-GsDghP5P.js">
-    <link rel="modulepreload" crossorigin href="/static/js/store-BOdajIBe.js">
+    <link rel="modulepreload" crossorigin href="/static/js/store-DPm4a3Pg.js">
     <link rel="modulepreload" crossorigin href="/static/js/keyboard-PuqsoxT-.js">
-    <link rel="modulepreload" crossorigin href="/static/js/collab-COI6q-ud.js">
-    <link rel="modulepreload" crossorigin href="/static/js/ui-vendor-DJuSdQGK.js">
-    <link rel="modulepreload" crossorigin href="/static/js/hooks-Bw1miBl2.js">
-    <link rel="stylesheet" crossorigin href="/static/css/index-D-ItTrUE.css">
+    <link rel="modulepreload" crossorigin href="/static/js/collab-BXHdrtnX.js">
+    <link rel="modulepreload" crossorigin href="/static/js/ui-vendor-CUMhCr7f.js">
+    <link rel="modulepreload" crossorigin href="/static/js/hooks-B-SrCRC2.js">
+    <link rel="stylesheet" crossorigin href="/static/css/index-CPNw3hlc.css">
   </head>
   <body>
+    <div id="app-boot-splash" aria-busy="true" aria-live="polite">
+      <div>
+        <img id="app-boot-splash-icon" alt="" />
+        <div class="app-boot-splash-text" id="app-boot-splash-text"></div>
+      </div>
+    </div>
     <div id="root"></div>
   </body>
 </html>
