@@ -82,9 +82,11 @@
     "texture-a": "纹理A",
     "texture-b": "纹理B",
     "virtual": "虚拟",
+    "locked": "锁定",
     "vertex": "顶点",
     "structure": "结构",
     "furnish": "布置",
+    "material": "材质",
     "select": "选择",
     "search": "搜索",
     "visible": "可见性",
@@ -106,7 +108,7 @@
     "size": "尺寸",
     "reference-picture": "参考图",
     "actual-size": "真实尺寸",
-    "library": "模型库",
+    "library": "素材库",
     "properties-panel": "属性",
     "tools-panel": "工具",
     "agent-panel": "智能体",
@@ -163,6 +165,7 @@
   },
   "placeholder": {
     "search-model-name": "搜索模型名称",
+    "search-material-name": "搜索材质名称",
     "please-input": "请输入",
     "please-select": "请选择"
   },
@@ -212,6 +215,7 @@
     "zip-package": "模型压缩包",
     "name-from-zip": "上传压缩包后自动填充",
     "zip-tip": "请上传符合规范的 3D 模型 ZIP 压缩包。压缩包内必须包含与压缩包同名的 .obj 模型文件；如包含材质文件，.mtl 文件也必须与压缩包同名，纹理图片为可选文件，请确保 .mtl 中引用的贴图文件一并放入压缩包内。",
+    "zip-download-template": "下载模板压缩包",
     "zip-must-be-zip": "请上传 ZIP 格式的压缩包",
     "zip-name-invalid": "压缩包名称只能包含英文、数字、下划线和连字符",
     "zip-missing-obj": "压缩包内缺少与压缩包同名的 .obj 模型文件",
@@ -1742,6 +1746,20 @@
       "window-frosted-glass": "磨砂玻璃窗",
       "window-stain-glass": "彩色玻璃窗"
     },
+    "material": {
+      "copy-hint": "已复制材质名称：{{name}}"
+    },
+    "texture-category": {
+      "fabric": "织物",
+      "floor": "地面",
+      "miscellaneous": "其它",
+      "roof": "屋顶",
+      "rug": "地毯",
+      "sky": "天空",
+      "wall": "墙面",
+      "wallpaper": "壁纸",
+      "wood": "木材"
+    },
     "texture": {
       "none": "无",
       "african-style": "非洲风格",
@@ -2170,14 +2188,17 @@
       "host-hint": "在「系统设置 → 模型」中添加自定义模型",
       "request-failed": "请求失败",
       "drawn": "已绘制 {{walls}} 面墙、{{holes}} 个门窗、{{things}} 件家具、{{zones}} 个区域",
+      "removed": "已删除 {{removed}} 个对象",
       "undo-all": "撤销",
       "keep-all": "接受",
       "send": "发送",
       "stop": "停止",
-      "queue-send-now": "现在发送",
-      "queue-remove": "删除排队",
-      "queue-edit": "编辑排队",
+      "queue-send-now": "立即发送",
+      "queue-remove": "删除对话",
+      "queue-edit": "编辑对话",
       "queue-toggle": "展开排队",
+      "queue-drag-sort": "拖动排序",
+      "queue-waiting": "等待发送…",
       "attach": "添加图片",
       "image-only": "请根据图片理解户型并绘制。",
       "voice": "语音输入",
@@ -2210,10 +2231,17 @@
       "delete-message": "删除",
       "delete-message-confirm-title": "删除这条对话",
       "delete-message-confirm-desc": "将同时删除该条提问及对应回复，此操作无法撤销。",
-      "todos": "待办清单",
+      "todos": "任务",
+      "todos-expand": "展开任务",
+      "todos-collapse": "折叠任务",
+      "todos-done": "任务已完成！",
+      "todos-progress": "{{done}}/{{total}} 个任务已完成",
       "questions": "需要你确认",
       "follow-ups": "下一步建议",
       "add-to-chat": "添加到对话",
+      "user-lights": "用户消息指示灯",
+      "user-light": "第 {{current}} / {{total}} 颗指示灯",
+      "image-message": "图片",
       "ask-cancel": "取消",
       "ask-submit": "提交",
       "ask-prev": "上一步",
@@ -2224,9 +2252,14 @@
       "ask-answer": "回答：{{value}}",
       "ask-answer-join": "、",
       "ask-progress": "{{current}} / {{total}}",
+      "ask-recommended": "推荐",
+      "ask-single": "单选",
+      "ask-multiple": "多选",
       "error-card": "任务未能完成，请稍后重试。",
       "error-card-copy": "复制详情",
-      "error-card-continue": "继续"
+      "error-card-continue": "继续",
+      "turn-limit-toast": "当前任务已达到 50 轮对话，新建任务可能效果更好。",
+      "new-task": "新任务"
     },
     "wall-default-settings": {
       "title": "墙体默认设置",
@@ -2237,7 +2270,15 @@
       "wall-transparency": "墙体透明度",
       "wall-texture-a": "墙体A面材质",
       "wall-texture-b": "墙体B面材质",
-      "close-hint": "合"
+      "close-hint": "合",
+      "length-input-hint": "输入墙体长度，回车生效",
+      "draw-mode": "画墙模式",
+      "draw-mode-orthogonal": "正交",
+      "draw-mode-angle": "夹角墙",
+      "guide-line": "定位线",
+      "guide-line-outer": "外线",
+      "guide-line-center": "中心线",
+      "guide-line-inner": "内线"
     },
     "zone-default-settings": {
       "title": "区域默认设置",
@@ -2379,10 +2420,9 @@
     "system-theme": "系统主题"
   },
   "stylize": {
-    "name": "风格化",
-    "wire-frame": "线框",
-    "style": "风格",
-    "material-with-wire-frame": "材质 + 线框",
+    "name": "风格渲染",
+    "outline": "轮廓",
+    "material-with-outline": "材质与轮廓",
     "material": "材质"
   },
   "menu": {
@@ -2453,6 +2493,11 @@
       "toggle-select": "加选/减选",
       "same-select": "选择同类",
       "same-select-verb": "按"
+    },
+    "material-operation": {
+      "name": "材质操作",
+      "tile-adjacent": "同时铺贴到全部相邻的面",
+      "tile-adjacent-verb": "按住"
     },
     "edit-operation": {
       "name": "编辑操作",
@@ -2568,12 +2613,13 @@
   },
   "element-prototype": {
     "wall": "墙体",
-    "hole": "洞",
+    "hole": "门窗",
     "zone": "区域",
     "room": "房间",
     "thing": "物件",
     "vertex": "顶点",
-    "group": "分组"
+    "group": "分组",
+    "locked-tip": "该{{name}}已锁定，请先解除锁定。"
   },
   "router": {
     "editor": "编辑",
