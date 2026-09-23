@@ -46,7 +46,8 @@ jobs:
 
           base = os.environ["BASE_PATH"].rstrip("/")
           root = Path("_site")
-          suffixes = {".html", ".js", ".css", ".json", ".svg"}
+          # .webmanifest 也需重写（manifest 的 start_url / scope）
+          suffixes = {".html", ".js", ".css", ".json", ".svg", ".webmanifest"}
           replacements = (
               ('"/static/', f'"{base}/static/'),
               ("'/static/", f"'{base}/static/"),
@@ -59,6 +60,17 @@ jobs:
               ("`/locales/", f"`{base}/locales/"),
               ('"/icon.ico"', f'"{base}/icon.ico"'),
               ("'/icon.ico'", f"'{base}/icon.ico'"),
+              # ---- PWA：manifest 链接、SW 注册路径与 scope ----
+              # index.html 里的 <link rel="manifest" href="/manifest.webmanifest">
+              ('"/manifest.webmanifest"', f'"{base}/manifest.webmanifest"'),
+              ("'/manifest.webmanifest'", f"'{base}/manifest.webmanifest'"),
+              # virtual_pwa-register chunk 里 new Workbox(`/sw.js`, {scope:`/`, ...})
+              # 用字符串拼接避开 f-string 里 {} 与反引号转义问题
+              ('`/sw.js`', '`' + base + '/sw.js`'),
+              ('scope:`/`', 'scope:`' + base + '/`'),
+              # manifest.webmanifest 自身：scope 必须与 SW 脚本目录一致，否则报 SecurityError
+              ('"start_url":"/"', '"start_url":"' + base + '/"'),
+              ('"scope":"/"', '"scope":"' + base + '/"'),
           )
 
           changed = 0
@@ -78,6 +90,14 @@ jobs:
               raise SystemExit(
                   "index.html base-path rewrite failed; "
                   f"expected paths like {base}/static/..."
+              )
+
+          # PWA 校验：manifest 的 scope/start_url 必须已带子路径前缀，且不能再是根路径 /
+          manifest = (root / "manifest.webmanifest").read_text(encoding="utf-8")
+          if f'"scope":"{base}/"' not in manifest or '"scope":"/"' in manifest:
+              raise SystemExit(
+                  "manifest.webmanifest PWA rewrite failed; "
+                  f"expected scope/start_url like {base}/..."
               )
           print(f"Rewrote asset paths with base={base} in {changed} files")
           PY
