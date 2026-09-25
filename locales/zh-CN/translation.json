@@ -2158,7 +2158,10 @@
     "align-to-axis-tip": "与其他元素的端点、角点处于同一水平或垂直位置时，自动对齐并锁定",
     "snap-to-edge-tip": "靠近墙体或物体的边缘时，自动贴附到边上",
     "snap-to-guide-tip": "自动吸附到手动创建的水平、垂直或圆形参考线",
-    "snap-to-grid-tip": "自动吸附到最近的网格交点"
+    "snap-to-grid-tip": "自动吸附到最近的网格交点",
+    "tip-endpoint": "端点",
+    "tip-midpoint": "中点",
+    "tip-perpendicular": "垂点"
   },
   "collapsible": {
     "2d-view": "二维视角",

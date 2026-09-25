@@ -2158,7 +2158,10 @@
     "align-to-axis-tip": "Locks position when aligned horizontally or vertically with other elements' endpoints and corners",
     "snap-to-edge-tip": "Snaps onto wall and object edges when nearby",
     "snap-to-guide-tip": "Snaps to manually created horizontal, vertical, or circular guides",
-    "snap-to-grid-tip": "Snaps to the nearest grid intersection"
+    "snap-to-grid-tip": "Snaps to the nearest grid intersection",
+    "tip-endpoint": "Endpoint",
+    "tip-midpoint": "Midpoint",
+    "tip-perpendicular": "Perpendicular"
   },
   "collapsible": {
     "2d-view": "2D View",
