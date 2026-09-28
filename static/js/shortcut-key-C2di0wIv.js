@@ -1,1 +1,0 @@
-import{m as e}from"./framework-Byd0ecST.js";import{t}from"./hotkey-list-Z4x0AJ1E.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};
