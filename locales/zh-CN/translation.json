@@ -1747,6 +1747,7 @@
       "window-frosted-glass": "磨砂玻璃窗",
       "window-stain-glass": "彩色玻璃窗"
     },
+    "drag-handle": "按住拖到画布",
     "material": {
       "copy-hint": "已复制材质名称：{{name}}"
     },
