@@ -1747,6 +1747,7 @@
       "window-frosted-glass": "Window Frosted Glass",
       "window-stain-glass": "Window Stain Glass"
     },
+    "drag-handle": "Hold and drag onto the canvas",
     "material": {
       "copy-hint": "Material name copied: {{name}}"
     },
