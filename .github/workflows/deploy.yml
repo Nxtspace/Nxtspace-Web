@@ -58,6 +58,18 @@ jobs:
               ('"/locales/', f'"{base}/locales/'),
               ("'/locales/", f"'{base}/locales/"),
               ("`/locales/", f"`{base}/locales/"),
+              # ---- public 新增解码器目录 draco/、basis/ ----
+              # zip-obj-loader 里 `${base}draco/` 构建后被折叠成 `/draco/`（反引号模板），需与 static/wasm 同样加子路径前缀
+              ('"/draco/', f'"{base}/draco/'),
+              ("'/draco/", f"'{base}/draco/"),
+              ("`/draco/", f"`{base}/draco/"),
+              ('"/basis/', f'"{base}/basis/'),
+              ("'/basis/", f"'{base}/basis/"),
+              ("`/basis/", f"`{base}/basis/"),
+              # ---- PWA 图标 public/pwa：index.html 里 apple-touch-icon 的根绝对路径 href="/pwa/..." ----
+              ('"/pwa/', f'"{base}/pwa/'),
+              ("'/pwa/", f"'{base}/pwa/"),
+              ("`/pwa/", f"`{base}/pwa/"),
               ('"/icon.ico"', f'"{base}/icon.ico"'),
               ("'/icon.ico'", f"'{base}/icon.ico'"),
               # ---- PWA：manifest 链接、SW 注册路径与 scope ----
