@@ -1,0 +1,1 @@
+import{m as e}from"./framework-C-MoYcAC.js";import{t}from"./hotkey-list-CIUGCUHA.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};
