@@ -1,0 +1,1 @@
+import{p as e}from"./framework-BYrWUm3r.js";import{t}from"./hotkey-list-DtLnpl-r.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as default};

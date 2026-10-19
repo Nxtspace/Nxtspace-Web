@@ -151,9 +151,7 @@
     "new-project": "新建项目",
     "new-project-description": "此操作将清空当前项目并创建新项目，是否继续？",
     "close-project": "关闭项目",
-    "close-project-description": "确定关闭当前项目并返回首页吗？",
-    "webgl-unsupported": "当前环境不支持三维视图",
-    "webgl-unsupported-hint": "无法创建 WebGL 图形上下文。二维编辑仍可使用。"
+    "close-project-description": "确定关闭当前项目并返回首页吗？"
   },
   "scene": {
     "2d-frame-rate": "二维帧率",
@@ -172,8 +170,6 @@
   },
   "message": {
     "no-results-found": "暂无内容",
-    "empty-title": "暂无内容",
-    "empty-description": "没有可显示的数据。",
     "group-zone-require-walls-holes": "选中区域时，需同时选中该区域的全部墙体和门窗才能分组。"
   },
   "model": {
@@ -3707,8 +3703,6 @@
     "hole-on-virtual-wall": "虚拟墙上不能开门窗"
   },
   "file": {
-    "choose": "选择文件",
-    "none-selected": "未选择任何文件",
     "export-success": "已导出 {{fileName}}",
     "export-success-android": "已导出 {{fileName}} 到「下载/Nxtspace」",
     "export-success-ios": "已导出 {{fileName}} 到「文件」App（我的 iPhone → Nxtspace Mobile → Download → Nxtspace）",

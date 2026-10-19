@@ -151,9 +151,7 @@
     "new-project": "New Project",
     "new-project-description": "This will clear the current project and create a new one. Continue?",
     "close-project": "Close Project",
-    "close-project-description": "Close the current project and return to the home screen?",
-    "webgl-unsupported": "3D view is not supported in this environment",
-    "webgl-unsupported-hint": "A WebGL graphics context could not be created. 2D editing still works."
+    "close-project-description": "Close the current project and return to the home screen?"
   },
   "scene": {
     "2d-frame-rate": "2D Frame Rate",
@@ -172,8 +170,6 @@
   },
   "message": {
     "no-results-found": "Nothing here yet",
-    "empty-title": "Nothing here yet",
-    "empty-description": "There is no data to display.",
     "group-zone-require-walls-holes": "When a zone is selected, all of its walls and doors/windows must also be selected to create a group."
   },
   "model": {
@@ -3707,8 +3703,6 @@
     "hole-on-virtual-wall": "Cannot place doors or windows on a virtual wall"
   },
   "file": {
-    "choose": "Choose file",
-    "none-selected": "No file selected",
     "export-success": "Exported {{fileName}}",
     "export-success-android": "Exported {{fileName}} to Downloads/Nxtspace",
     "export-success-ios": "Exported {{fileName}} to the Files app (On My iPhone → Nxtspace Mobile → Download → Nxtspace)",
