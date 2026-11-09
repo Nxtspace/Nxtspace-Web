@@ -131,6 +131,8 @@
     "back": "Back"
   },
   "prompt": {
+    "project-load-failed": "Could not load the project. Your current editing state was kept. Check the host connection and retry.",
+    "project-save-failed": "Save failed. Your changes are not saved. Check available storage and try saving again.",
     "last-saved": "Last Saved",
     "scene-scaling": "Scene Scaling",
     "ratio": "x",
@@ -173,6 +175,11 @@
     "group-zone-require-walls-holes": "When a zone is selected, all of its walls and doors/windows must also be selected to create a group."
   },
   "model": {
+    "host-update-unsupported": "This host does not support model updates. Upgrade the host and try again.",
+    "delete-failed": "Model deletion failed. The catalog entry was kept. Try again.",
+    "host-restore-failed": "Could not read the host model catalog. Check the host connection and try again.",
+    "import-name-conflict": "An imported model conflicts with an existing model of the same name. Rename or remove the conflicting model and try again.",
+
     "add-model": "Add Model",
     "add-single": "Add Single",
     "add-batch": "Add Batch",
@@ -3608,6 +3615,9 @@
       "render-quality-high": "High Quality",
       "render-quality-balanced": "Balanced",
       "render-quality-performance": "Performance",
+      "renderer-backend": "Render Mode",
+      "renderer-backend-webgl": "WebGL",
+      "renderer-backend-webgpu": "WebGPU",
       "roam-collision": "Roam Collision",
       "roam-collision-walls": "Walls",
       "roam-collision-things": "Things",
@@ -3684,6 +3694,11 @@
     }
   },
   "error": {
+    "application-crashed": "The page encountered an error",
+    "recovery-description": "Export your current data before trying to restore the page. The recovery file contains the current editing state.",
+    "export-recovery": "Export recovery data",
+    "retry-page": "Retry page",
+
     "name": "Error",
     "error-message": "Error Message",
     "name-required": "Name cannot be empty",

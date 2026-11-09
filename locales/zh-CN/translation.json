@@ -126,6 +126,8 @@
     "back": "后"
   },
   "prompt": {
+    "project-load-failed": "项目读取失败，已保留当前编辑内容。请检查宿主连接后重试。",
+    "project-save-failed": "保存失败，更改尚未保存。请检查存储空间后再次手动保存。",
     "last-saved": "最后保存时间",
     "scene-scaling": "场景缩放",
     "ratio": "x",
@@ -173,6 +175,11 @@
     "group-zone-require-walls-holes": "选中区域时，需同时选中该区域的全部墙体和门窗才能分组。"
   },
   "model": {
+    "host-update-unsupported": "当前宿主版本不支持更新模型，请升级宿主后重试。",
+    "delete-failed": "模型删除失败，目录已保留，请重试。",
+    "host-restore-failed": "无法读取宿主模型目录，请检查宿主连接后重试。",
+    "import-name-conflict": "导入模型与目录中的同名模型内容不同。请先重命名或移除冲突模型后重试。",
+
     "add-model": "添加模型",
     "add-single": "单个添加",
     "add-batch": "批量添加",
@@ -3608,6 +3615,9 @@
       "render-quality-high": "高画质",
       "render-quality-balanced": "均衡",
       "render-quality-performance": "高性能",
+      "renderer-backend": "渲染模式",
+      "renderer-backend-webgl": "WebGL",
+      "renderer-backend-webgpu": "WebGPU",
       "roam-collision": "漫游碰撞",
       "roam-collision-walls": "墙体",
       "roam-collision-things": "物体",
@@ -3684,6 +3694,11 @@
     }
   },
   "error": {
+    "application-crashed": "页面出现错误",
+    "recovery-description": "可以先导出当前数据，再尝试恢复页面。恢复文件包含当前编辑状态。",
+    "export-recovery": "导出恢复数据",
+    "retry-page": "重试页面",
+
     "name": "错误",
     "error-message": "错误消息",
     "name-required": "名称不能为空",
