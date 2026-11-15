@@ -1,4 +1,42 @@
 {
+  "measurement": {
+    "type": "Measurement type",
+    "start": "Start measuring",
+    "title": "Measure",
+    "distance": "Distance",
+    "angle": "Angle",
+    "perimeter": "Perimeter",
+    "area": "Area",
+    "volume": "Volume",
+    "exit": "Exit measurement",
+    "unit": "Measurement unit",
+    "height": "Perpendicular height",
+    "back": "Remove last point",
+    "cancel": "Cancel",
+    "save": "Save measurement",
+    "finish": "Finish measurement",
+    "close-base": "Close base",
+    "pick-point": "Pick a point",
+    "records": "Measurements ({{count}})",
+    "clear": "Clear all",
+    "delete-record": "Delete measurement {{index}}",
+    "point-count": "{{count}} points",
+    "keyboard-hint": "Enter finish · Backspace remove point · Esc cancel / exit",
+    "hint-distance": "Click a start and end point. Ctrl bypasses snapping; Shift constrains an axis.",
+    "hint-angle": "Click the first point, the angle vertex, then the third point.",
+    "hint-perimeter": "Pick boundary vertices, then click the start, finish button, or press Enter to close.",
+    "hint-area": "Pick coplanar boundary vertices, then click the start or press Enter to close.",
+    "hint-volume": "Pick and close a base polygon, then enter the perpendicular height.",
+    "hint-height": "Base closed. Enter a perpendicular height and press Enter or Save to measure the prism.",
+    "error-not-enough-points": "Distance needs 2 points; other measurements need at least 3.",
+    "error-invalid-points": "Invalid coordinates. Pick the points again.",
+    "error-duplicate-points": "This point already exists. Pick another point.",
+    "error-invalid-polygon": "The base must enclose an area. Check the points.",
+    "error-non-planar": "Boundary points must lie on the same plane.",
+    "error-self-intersection": "The boundary cannot intersect itself. Remove and adjust vertices.",
+    "error-invalid-height": "Enter a valid height greater than zero.",
+    "error-level-changed": "The active level changed. Start a new measurement."
+  },
   "locales": {
     "name": "English",
     "code": "en-US"
@@ -3457,8 +3495,24 @@
     "snap-to-edge-tip": "Snaps onto wall and object edges when nearby",
     "snap-to-guide-tip": "Snaps to manually created horizontal, vertical, or circular guides",
     "snap-to-grid-tip": "Snaps to the nearest grid intersection",
+    "measure-height": "Height: {{value}}{{unit}}",
+    "measure-altitude": "Elevation: {{value}}{{unit}}",
+    "measure-size": "L × W: {{length}} × {{width}} {{unit}}",
+    "measure-description-separator": ", ",
+    "measure-angle": "Angle: {{value}}°",
     "tip-endpoint": "Endpoint",
     "tip-midpoint": "Midpoint",
+    "tip-intersection": "Intersection",
+    "tip-aligned-horizontal": "Horizontally aligned",
+    "tip-aligned-vertical": "Vertically aligned",
+    "tip-align-x": "X alignment",
+    "tip-align-y": "Y alignment",
+    "tip-same-width": "Matching length",
+    "tip-same-height": "Matching width",
+    "tip-standard-angle": "Standard angle",
+    "tip-parallel-angle": "Parallel",
+    "tip-perpendicular-angle": "Perpendicular",
+    "tip-equal-spacing": "Equal spacing",
     "tip-perpendicular": "Perpendicular"
   },
   "collapsible": {
@@ -3602,6 +3656,8 @@
       "color": "Color"
     },
     "scene-settings": {
+      "sky-material": "Material",
+      "light-weather": "Light and weather",
       "title": "Scene Settings",
       "scene-width": "Scene Width",
       "scene-length": "Scene Length",
@@ -3647,6 +3703,7 @@
     "current": "Current",
     "empty": "No operation records",
     "ops": {
+      "measurements": "Measurements",
       "draw-wall": "Draw wall",
       "remove-wall": "Delete wall",
       "move-wall": "Move wall",
@@ -4019,5 +4076,43 @@
     "buildings-request-failed": "Exterior building data request failed (HTTP {{status}})",
     "buildings-empty-fallback": "No buildings found in the selection; using placeholder buildings",
     "buildings-fetch-failed-fallback": "Failed to fetch exterior building data; using placeholder buildings"
-  }
+  },
+
+  "viewer": {
+    "daylight": {
+        "sky": {
+            "title": "Sky",
+            "subtitle": "Light and weather for this view",
+            "reset": "Reset",
+            "close": "Close",
+            "sunrise": "Sunrise",
+            "sunset": "Sunset",
+            "followClock": "Follow the clock",
+            "followClockDetail": "The sun moves with your local clock.",
+            "liveDetail": "Follows your local clock. Sun position is approximate.",
+            "cloudCover": "Cloud cover",
+            "arc": "Drag the sun to set the time"
+        },
+        "time": {
+            "golden": "Golden hour",
+            "midday": "Midday",
+            "blue": "Blue hour",
+            "night": "Night",
+            "title": "Time of day"
+        },
+        "phase": {
+            "morning": "Morning",
+            "afternoon": "Afternoon"
+        },
+        "weather": {
+            "clear": "Clear",
+            "fair": "Fair",
+            "cloudy": "Cloudy",
+            "overcast": "Overcast"
+        },
+        "location": {
+            "use": "Use my location"
+        }
+    }
+}
 }
