@@ -239,7 +239,6 @@
   },
   "model": {
     "host-update-unsupported": "This host does not support model updates. Upgrade the host and try again.",
-    "delete-failed": "Model deletion failed. The catalog entry was kept. Try again.",
     "host-restore-failed": "Could not read the host model catalog. Check the host connection and try again.",
     "import-name-conflict": "An imported model conflicts with an existing model of the same name. Rename or remove the conflicting model and try again.",
 
@@ -325,6 +324,7 @@
     "delete-confirm-title": "Delete Model",
     "delete-confirm-description": "Are you sure you want to delete this custom model? This action cannot be undone.",
     "classify": {
+      "roof": "Roof",
       "living-room": "Living Room",
       "bedroom": "Bedroom",
       "kitchen": "Kitchen",
@@ -3735,6 +3735,84 @@
     "warning-message": "Warning Message",
     "recent-messages": "List of recent warning messages."
   },
+  "roof": {
+    "handles": {
+      "left": "Resize left edge",
+      "right": "Resize right edge",
+      "back": "Resize back edge",
+      "front": "Resize front edge",
+      "move": "Move roof segment",
+      "rotate": "Rotate roof segment",
+      "height": "Adjust roof segment height",
+      "elevation": "Adjust roof segment elevation"
+    },
+    "types": {
+      "hip": "Hip",
+      "gable": "Gable",
+      "shed": "Shed",
+      "flat": "Flat",
+      "gambrel": "Gambrel",
+      "dutch": "Dutch Gable",
+      "mansard": "Mansard",
+      "conical": "Conical",
+      "barrel": "Barrel"
+    },
+    "first-corner": "Press and drag to draw the roof",
+    "second-corner": "Release to finish the roof",
+    "pick-room": "Select a rectangular room",
+    "room": "Pick room",
+    "draw": "Draw footprint",
+    "ridge-long": "Long ridge (R)",
+    "ridge-short": "Short ridge (R)",
+    "segment": "Roof segment",
+    "type": "Roof type",
+    "add-segment": "Add Segment",
+    "segment-first-corner": "Press and drag to draw the segment",
+    "segment-second-corner": "Release to finish the segment",
+    "sections": {
+      "eaves": "Eaves",
+      "footprint": "Footprint",
+      "conical": "Conical Shape",
+      "wall": "Wall Height",
+      "pitch": "Pitch",
+      "shape": "Shape",
+      "structure": "Structure",
+      "position": "Position"
+    },
+    "fields": {
+      "width": "Width",
+      "depth": "Depth",
+      "conicalFullCircle": "Full circle",
+      "conicalStartAngle": "Start angle",
+      "conicalSweepAngle": "Sweep angle",
+      "diameter": "Diameter",
+      "pitch": "Pitch",
+      "wallHeight": "Heel height",
+      "overhang": "Eave Overhang",
+      "endOverhang": "End Overhang",
+      "gableOverhang": "Gable Overhang",
+      "dutchTopRakeThickness": "Top Rake Thickness",
+      "segmentCoordinate": "Segment {{axis}}",
+      "wallThickness": "Wall thickness",
+      "deckThickness": "Deck thickness",
+      "shingleThickness": "Covering thickness",
+      "barrelSegments": "Arch Bays",
+      "barrelRise": "Arc rise",
+      "gambrelLowerWidthRatio": "Lower slope width ratio",
+      "gambrelLowerHeightRatio": "Lower slope rise ratio",
+      "mansardSteepWidthRatio": "Steep slope width ratio",
+      "mansardSteepHeightRatio": "Steep slope rise ratio",
+      "dutchHipWidthRatio": "Hip width ratio",
+      "dutchHipHeightRatio": "Hip rise ratio",
+      "dutchWaistLengthRatio": "Gablet length ratio",
+      "dutchGabletRake": "Gablet rake",
+      "segmentRotation": "Segment rotation",
+      "x": "Roof X",
+      "z": "Roof Z",
+      "elevation": "Elevation above level",
+      "rotation": "Roof rotation"
+    }
+  },
   "history": {
     "name": "Operation History",
     "title": "Scene Operation History",
@@ -3747,6 +3825,7 @@
     "current": "Current",
     "empty": "No operation records",
     "ops": {
+      "roof": "Roof",
       "measurements": "Measurements",
       "draw-wall": "Draw wall",
       "remove-wall": "Delete wall",
@@ -4032,6 +4111,7 @@
     }
   },
   "element-prototype": {
+    "roof": "Roof",
     "wall": "Wall",
     "hole": "Hole",
     "zone": "Zone",
@@ -4039,6 +4119,7 @@
     "thing": "Thing",
     "vertex": "Vertex",
     "group": "Group",
+    "layer": "level",
     "locked-tip": "This {{name}} is locked, please unlock it first."
   },
   "router": {

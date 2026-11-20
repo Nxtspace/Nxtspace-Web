@@ -239,7 +239,6 @@
   },
   "model": {
     "host-update-unsupported": "当前宿主版本不支持更新模型，请升级宿主后重试。",
-    "delete-failed": "模型删除失败，目录已保留，请重试。",
     "host-restore-failed": "无法读取宿主模型目录，请检查宿主连接后重试。",
     "import-name-conflict": "导入模型与目录中的同名模型内容不同。请先重命名或移除冲突模型后重试。",
 
@@ -325,6 +324,7 @@
     "delete-confirm-title": "删除模型",
     "delete-confirm-description": "确定删除该自定义模型吗？删除后不可恢复。",
     "classify": {
+      "roof": "屋顶",
       "living-room": "客厅",
       "bedroom": "卧室",
       "kitchen": "厨房",
@@ -3735,6 +3735,84 @@
     "warning-message": "警告消息",
     "recent-messages": "最近警告消息列表。."
   },
+  "roof": {
+    "handles": {
+      "left": "拖动左边",
+      "right": "拖动右边",
+      "back": "拖动后边",
+      "front": "拖动前边",
+      "move": "移动屋顶分段",
+      "rotate": "旋转屋顶分段",
+      "height": "调整屋顶分段高度",
+      "elevation": "调整屋顶分段离地高度"
+    },
+    "types": {
+      "hip": "四坡屋顶",
+      "gable": "双坡屋顶",
+      "shed": "单坡屋顶",
+      "flat": "平屋顶",
+      "gambrel": "双折坡屋顶",
+      "dutch": "荷兰式山墙屋顶",
+      "mansard": "孟莎式屋顶",
+      "conical": "圆锥屋顶",
+      "barrel": "拱形屋顶"
+    },
+    "first-corner": "按住并拖动绘制屋顶",
+    "second-corner": "松开完成屋顶",
+    "pick-room": "选择一个矩形房间",
+    "room": "按房间创建",
+    "draw": "绘制轮廓",
+    "ridge-long": "沿长边设屋脊（R）",
+    "ridge-short": "沿短边设屋脊（R）",
+    "segment": "屋顶分段",
+    "type": "屋顶类型",
+    "add-segment": "添加分段",
+    "segment-first-corner": "按住并拖动绘制分段",
+    "segment-second-corner": "松开完成分段",
+    "sections": {
+      "eaves": "屋檐",
+      "footprint": "轮廓",
+      "conical": "圆锥形状",
+      "wall": "檐墙高度",
+      "pitch": "坡度",
+      "shape": "形状",
+      "structure": "构造",
+      "position": "位置"
+    },
+    "fields": {
+      "width": "宽度",
+      "depth": "进深",
+      "conicalFullCircle": "整圆覆盖",
+      "conicalStartAngle": "起始角",
+      "conicalSweepAngle": "覆盖角",
+      "diameter": "直径",
+      "pitch": "坡度",
+      "wallHeight": "檐墙高度",
+      "overhang": "水平挑檐",
+      "endOverhang": "端部挑檐",
+      "gableOverhang": "山墙挑檐",
+      "dutchTopRakeThickness": "上部斜檐板厚度",
+      "segmentCoordinate": "分段 {{axis}}",
+      "wallThickness": "檐墙厚度",
+      "deckThickness": "屋面板厚度",
+      "shingleThickness": "覆盖层厚度",
+      "barrelSegments": "拱面分段数",
+      "barrelRise": "拱高",
+      "gambrelLowerWidthRatio": "下坡宽度比例",
+      "gambrelLowerHeightRatio": "下坡升高比例",
+      "mansardSteepWidthRatio": "陡坡宽度比例",
+      "mansardSteepHeightRatio": "陡坡升高比例",
+      "dutchHipWidthRatio": "下部四坡宽度比例",
+      "dutchHipHeightRatio": "下部四坡升高比例",
+      "dutchWaistLengthRatio": "山墙长度比例",
+      "dutchGabletRake": "山墙挑檐",
+      "segmentRotation": "分段旋转",
+      "x": "屋顶 X",
+      "z": "屋顶 Z",
+      "elevation": "相对楼层高度",
+      "rotation": "屋顶旋转"
+    }
+  },
   "history": {
     "name": "操作记录",
     "title": "场景操作记录",
@@ -3747,6 +3825,7 @@
     "current": "当前",
     "empty": "暂无操作记录",
     "ops": {
+      "roof": "屋顶",
       "measurements": "测量标注",
       "draw-wall": "绘制墙体",
       "remove-wall": "删除墙体",
@@ -4032,6 +4111,7 @@
     }
   },
   "element-prototype": {
+    "roof": "屋顶",
     "wall": "墙体",
     "hole": "门窗",
     "zone": "区域",
@@ -4039,6 +4119,7 @@
     "thing": "物件",
     "vertex": "顶点",
     "group": "分组",
+    "layer": "楼层",
     "locked-tip": "该{{name}}已锁定，请先解除锁定。"
   },
   "router": {
@@ -4124,39 +4205,39 @@
 
   "viewer": {
     "daylight": {
-        "sky": {
-            "title": "天空",
-            "subtitle": "当前视图的光照与天气",
-            "reset": "重置",
-            "close": "关闭",
-            "sunrise": "日出",
-            "sunset": "日落",
-            "followClock": "跟随时钟",
-            "followClockDetail": "太阳随本地时钟移动。",
-            "liveDetail": "跟随本地时钟，太阳位置为近似值。",
-            "cloudCover": "云量",
-            "arc": "拖动太阳设置时间"
-        },
-        "time": {
-            "golden": "黄金时刻",
-            "midday": "正午",
-            "blue": "蓝调时刻",
-            "night": "夜晚",
-            "title": "一天中的时间"
-        },
-        "phase": {
-            "morning": "早晨",
-            "afternoon": "下午"
-        },
-        "weather": {
-            "clear": "晴朗",
-            "fair": "少云",
-            "cloudy": "多云",
-            "overcast": "阴天"
-        },
-        "location": {
-            "use": "使用我的位置"
-        }
+      "sky": {
+        "title": "天空",
+        "subtitle": "当前视图的光照与天气",
+        "reset": "重置",
+        "close": "关闭",
+        "sunrise": "日出",
+        "sunset": "日落",
+        "followClock": "跟随时钟",
+        "followClockDetail": "太阳随本地时钟移动。",
+        "liveDetail": "跟随本地时钟，太阳位置为近似值。",
+        "cloudCover": "云量",
+        "arc": "拖动太阳设置时间"
+      },
+      "time": {
+        "golden": "黄金时刻",
+        "midday": "正午",
+        "blue": "蓝调时刻",
+        "night": "夜晚",
+        "title": "一天中的时间"
+      },
+      "phase": {
+        "morning": "早晨",
+        "afternoon": "下午"
+      },
+      "weather": {
+        "clear": "晴朗",
+        "fair": "少云",
+        "cloudy": "多云",
+        "overcast": "阴天"
+      },
+      "location": {
+        "use": "使用我的位置"
+      }
     }
-}
+  }
 }
