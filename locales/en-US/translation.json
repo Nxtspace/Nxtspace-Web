@@ -3595,7 +3595,7 @@
       "no-model": "Add and enable a model in Settings first",
       "host-hint": "Add custom models in Settings → Models",
       "request-failed": "Request failed",
-      "drawn": "Drew {{walls}} walls, {{holes}} openings, {{things}} items, {{zones}} zones",
+      "drawn": "Drew {{walls}} walls, {{holes}} openings, {{things}} items, {{zones}} zones, {{roofs}} roofs",
       "removed": "Removed {{removed}} objects",
       "undo-all": "Undo",
       "keep-all": "Accept",
@@ -3722,6 +3722,7 @@
       "roam-collision-walls": "Walls",
       "roam-collision-things": "Things",
       "roam-collision-holes": "Doors & Windows",
+      "roam-collision-roofs": "Roofs",
       "color": "Color",
       "texture": "Texture"
     }

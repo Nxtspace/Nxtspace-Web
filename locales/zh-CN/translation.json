@@ -3595,7 +3595,7 @@
       "no-model": "请先在系统设置中添加并启用模型",
       "host-hint": "在「系统设置 → 模型」中添加自定义模型",
       "request-failed": "请求失败",
-      "drawn": "已绘制 {{walls}} 面墙、{{holes}} 个门窗、{{things}} 件家具、{{zones}} 个区域",
+      "drawn": "已绘制 {{walls}} 面墙、{{holes}} 个门窗、{{things}} 件家具、{{zones}} 个区域、{{roofs}} 个屋顶",
       "removed": "已删除 {{removed}} 个对象",
       "undo-all": "撤销",
       "keep-all": "接受",
@@ -3722,6 +3722,7 @@
       "roam-collision-walls": "墙体",
       "roam-collision-things": "物体",
       "roam-collision-holes": "门窗",
+      "roam-collision-roofs": "屋顶",
       "color": "颜色",
       "texture": "纹理"
     }
