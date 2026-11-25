@@ -325,6 +325,7 @@
     "delete-confirm-description": "Are you sure you want to delete this custom model? This action cannot be undone.",
     "classify": {
       "roof": "Roof",
+      "stair": "Stair",
       "living-room": "Living Room",
       "bedroom": "Bedroom",
       "kitchen": "Kitchen",
@@ -2282,7 +2283,24 @@
       "yellow-laptop": "Yellow Laptop",
       "z-fold-literature-stand": "Z Fold Literature Stand",
       "zigzag-cubicle-divider": "Zigzag Cubicle Divider",
-      "zoey-modern-bar-stool": "Zoey Modern Bar Stool"
+      "zoey-modern-bar-stool": "Zoey Modern Bar Stool",
+      "Dutch Gable": "Dutch Gable",
+      "Flat": "Flat",
+      "Gambrel": "Gambrel",
+      "Barrel": "Barrel",
+      "Shed": "Shed",
+      "Mansard": "Mansard",
+      "Gable": "Gable",
+      "Hip": "Hip",
+      "Conical": "Conical",
+      "Curved Stairs": "Curved Stairs",
+      "Cutback stairs": "Cutback stairs",
+      "Left Rail Stairs": "Left Rail Stairs",
+      "Open stairs": "Open stairs",
+      "Simple stair": "Simple stair",
+      "Spiral Stairs": "Spiral Stairs",
+      "Straight Stairs": "Straight Stairs",
+      "Switchback stairs": "Switchback stairs"
     },
     "tag": {
       "170cm length": "170cm length",
@@ -3595,7 +3613,7 @@
       "no-model": "Add and enable a model in Settings first",
       "host-hint": "Add custom models in Settings → Models",
       "request-failed": "Request failed",
-      "drawn": "Drew {{walls}} walls, {{holes}} openings, {{things}} items, {{zones}} zones, {{roofs}} roofs",
+      "drawn": "Drew {{walls}} walls, {{holes}} openings, {{things}} items, {{zones}} zones, {{roofs}} roofs, {{stairs}} stairs",
       "removed": "Removed {{removed}} objects",
       "undo-all": "Undo",
       "keep-all": "Accept",
@@ -3723,6 +3741,7 @@
       "roam-collision-things": "Things",
       "roam-collision-holes": "Doors & Windows",
       "roam-collision-roofs": "Roofs",
+      "roam-collision-stairs": "Stairs",
       "color": "Color",
       "texture": "Texture"
     }
@@ -3814,6 +3833,120 @@
       "rotation": "Roof rotation"
     }
   },
+  "stair": {
+    "types": {
+      "straight": "Straight Stairs",
+      "l-shaped": "L-Shaped Stair",
+      "u-shaped": "U-Shaped Stair",
+      "curved": "Curved Stairs",
+      "spiral": "Spiral Stairs",
+      "l-winder": "L-Shaped Winder Stair",
+      "u-winder": "U-Shaped Winder Stair",
+      "spiral-landing": "Spiral Stair with Landing",
+      "cutback": "Cutback Stairs",
+      "left-rail": "Left Rail Stairs",
+      "open": "Open Stairs",
+      "simple": "Simple Stair",
+      "switchback": "Switchback Stairs"
+    },
+    "stair-types": {
+      "straight": "Straight",
+      "curved": "Curved",
+      "spiral": "Spiral"
+    },
+    "sides": {
+      "front": "Front",
+      "left": "Left",
+      "right": "Right"
+    },
+    "top-landing": {
+      "none": "None",
+      "integrated": "Integrated"
+    },
+    "segment-types": {
+      "stair": "Flight",
+      "landing": "Landing",
+      "winder": "Winder"
+    },
+    "place": "Click to place the stair",
+    "rotate": "Rotate (R)",
+    "sections": {
+      "shape": "Shape",
+      "segments": "Segments",
+      "arc": "Arc",
+      "railing": "Railing",
+      "structure": "Structure"
+    },
+    "fields": {
+      "type": "Stair Type",
+      "total-rise": "Total Rise",
+      "thickness": "Thickness",
+      "fill-to-floor": "Fill to Floor",
+      "attachment-side": "Attachment Side",
+      "width": "Width",
+      "length": "Length",
+      "height": "Height",
+      "step-count": "Step Count",
+      "inner-radius": "Inner Radius",
+      "sweep-angle": "Sweep Angle",
+      "top-landing": "Top Landing",
+      "top-landing-depth": "Top Landing Depth",
+      "center-column": "Center Column",
+      "step-supports": "Step Supports"
+    },
+    "segment-title": "Segment {{index}} · {{type}}",
+    "add-flight": "Add Flight",
+    "add-landing": "Add Landing",
+    "remove-segment": "Remove Segment",
+    "measure": {
+      "width": "Width: {{value}}{{unit}}",
+      "inner-radius": "Inner radius: {{value}}{{unit}}",
+      "sweep": "Sweep: {{value}}°"
+    },
+    "winder": {
+      "turn": "Turn",
+      "inner-gap": "Inner gap",
+      "walking-line-offset": "Walking line offset",
+      "division": "Division",
+      "divisions": {
+        "equal-going": "Equal going",
+        "equal-angle": "Equal angle"
+      }
+    },
+    "railing": {
+      "mode": "Railing",
+      "height": "Railing height",
+      "modes": {
+        "none": "None",
+        "left": "Left",
+        "right": "Right",
+        "both": "Both"
+      }
+    },
+    "structure": {
+      "type": "Structure",
+      "types": {
+        "none": "Solid body",
+        "wood-stringers": "Wood stringers",
+        "concrete": "Concrete",
+        "steel-stringers": "Steel stringers"
+      }
+    },
+    "handles": {
+      "segment-width-left": "Drag left side of segment {{index}} (width)",
+      "segment-width-right": "Drag right side of segment {{index}} (width)",
+      "segment-length": "Adjust length of segment {{index}}",
+      "segment-height": "Adjust height of segment {{index}}",
+      "height": "Adjust total rise",
+      "curved-width": "Adjust stair width",
+      "curved-inner-radius": "Adjust inner radius",
+      "curved-sweep-start": "Adjust sweep at start",
+      "curved-sweep-end": "Adjust sweep at end",
+      "rotate": "Rotate stair",
+      "altitude": "Adjust stair elevation",
+      "move": "Move stair"
+    }
+  },
   "history": {
     "name": "Operation History",
     "title": "Scene Operation History",
@@ -3827,6 +3960,7 @@
     "empty": "No operation records",
     "ops": {
       "roof": "Roof",
+      "stair": "Stair",
       "measurements": "Measurements",
       "draw-wall": "Draw wall",
       "remove-wall": "Delete wall",
@@ -4113,6 +4247,7 @@
   },
   "element-prototype": {
     "roof": "Roof",
+    "stair": "Stair",
     "wall": "Wall",
     "hole": "Hole",
     "zone": "Zone",

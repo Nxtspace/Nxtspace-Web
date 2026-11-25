@@ -325,6 +325,7 @@
     "delete-confirm-description": "确定删除该自定义模型吗？删除后不可恢复。",
     "classify": {
       "roof": "屋顶",
+      "stair": "楼梯",
       "living-room": "客厅",
       "bedroom": "卧室",
       "kitchen": "厨房",
@@ -2282,7 +2283,24 @@
       "yellow-laptop": "黄色笔记本电脑",
       "z-fold-literature-stand": "Z 型书报架",
       "zigzag-cubicle-divider": "之字形隔断",
-      "zoey-modern-bar-stool": "Zoey 现代吧台凳"
+      "zoey-modern-bar-stool": "Zoey 现代吧台凳",
+      "Dutch Gable": "荷兰式山墙屋顶",
+      "Flat": "平屋顶",
+      "Gambrel": "双折坡屋顶",
+      "Barrel": "拱形屋顶",
+      "Shed": "单坡屋顶",
+      "Mansard": "孟莎式屋顶",
+      "Gable": "双坡屋顶",
+      "Hip": "四坡屋顶",
+      "Conical": "圆锥屋顶",
+      "Curved Stairs": "弧形楼梯",
+      "Cutback stairs": "转角楼梯",
+      "Left Rail Stairs": "左侧扶手楼梯",
+      "Open stairs": "开放式楼梯",
+      "Simple stair": "简易楼梯",
+      "Spiral Stairs": "螺旋楼梯",
+      "Straight Stairs": "直跑楼梯",
+      "Switchback stairs": "折返楼梯"
     },
     "tag": {
       "170cm length": "长度170cm",
@@ -3595,7 +3613,7 @@
       "no-model": "请先在系统设置中添加并启用模型",
       "host-hint": "在「系统设置 → 模型」中添加自定义模型",
       "request-failed": "请求失败",
-      "drawn": "已绘制 {{walls}} 面墙、{{holes}} 个门窗、{{things}} 件家具、{{zones}} 个区域、{{roofs}} 个屋顶",
+      "drawn": "已绘制 {{walls}} 面墙、{{holes}} 个门窗、{{things}} 件家具、{{zones}} 个区域、{{roofs}} 个屋顶、{{stairs}} 部楼梯",
       "removed": "已删除 {{removed}} 个对象",
       "undo-all": "撤销",
       "keep-all": "接受",
@@ -3723,6 +3741,7 @@
       "roam-collision-things": "物体",
       "roam-collision-holes": "门窗",
       "roam-collision-roofs": "屋顶",
+      "roam-collision-stairs": "楼梯",
       "color": "颜色",
       "texture": "纹理"
     }
@@ -3814,6 +3833,120 @@
       "rotation": "屋顶旋转"
     }
   },
+  "stair": {
+    "types": {
+      "straight": "直跑楼梯",
+      "l-shaped": "L 形楼梯",
+      "u-shaped": "U 形楼梯",
+      "curved": "弧形楼梯",
+      "spiral": "螺旋楼梯",
+      "l-winder": "L 形扇形踏步楼梯",
+      "u-winder": "U 形扇形踏步楼梯",
+      "spiral-landing": "带顶部平台螺旋楼梯",
+      "cutback": "转角楼梯",
+      "left-rail": "左侧扶手楼梯",
+      "open": "开放式楼梯",
+      "simple": "简易楼梯",
+      "switchback": "折返楼梯"
+    },
+    "stair-types": {
+      "straight": "直跑",
+      "curved": "弧形",
+      "spiral": "螺旋"
+    },
+    "sides": {
+      "front": "前",
+      "left": "左",
+      "right": "右"
+    },
+    "top-landing": {
+      "none": "无",
+      "integrated": "一体式"
+    },
+    "segment-types": {
+      "stair": "梯段",
+      "landing": "平台",
+      "winder": "扇形踏步"
+    },
+    "place": "点击放置楼梯",
+    "rotate": "旋转（R）",
+    "sections": {
+      "shape": "形状",
+      "segments": "分段",
+      "arc": "弧形参数",
+      "railing": "栏杆",
+      "structure": "构造"
+    },
+    "fields": {
+      "type": "楼梯类型",
+      "total-rise": "总高度",
+      "thickness": "板厚",
+      "fill-to-floor": "填充到地面",
+      "attachment-side": "连接方向",
+      "width": "宽度",
+      "length": "长度",
+      "height": "高度",
+      "step-count": "踏步数",
+      "inner-radius": "内半径",
+      "sweep-angle": "旋转角度",
+      "top-landing": "顶部平台",
+      "top-landing-depth": "顶部平台深度",
+      "center-column": "中柱",
+      "step-supports": "踏步托架"
+    },
+    "segment-title": "分段 {{index}} · {{type}}",
+    "add-flight": "添加梯段",
+    "add-landing": "添加平台",
+    "remove-segment": "删除分段",
+    "measure": {
+      "width": "宽度：{{value}}{{unit}}",
+      "inner-radius": "内半径：{{value}}{{unit}}",
+      "sweep": "旋转角度：{{value}}°"
+    },
+    "winder": {
+      "turn": "转向",
+      "inner-gap": "内侧间隙",
+      "walking-line-offset": "行走线偏移",
+      "division": "分割方式",
+      "divisions": {
+        "equal-going": "等踏步深",
+        "equal-angle": "等角度"
+      }
+    },
+    "railing": {
+      "mode": "栏杆",
+      "height": "栏杆高度",
+      "modes": {
+        "none": "无",
+        "left": "左侧",
+        "right": "右侧",
+        "both": "两侧"
+      }
+    },
+    "structure": {
+      "type": "梯身构造",
+      "types": {
+        "none": "实心梯身",
+        "wood-stringers": "木斜梁",
+        "concrete": "混凝土",
+        "steel-stringers": "钢斜梁"
+      }
+    },
+    "handles": {
+      "segment-width-left": "拖动第 {{index}} 段左侧（宽度）",
+      "segment-width-right": "拖动第 {{index}} 段右侧（宽度）",
+      "segment-length": "调整第 {{index}} 段长度",
+      "segment-height": "调整第 {{index}} 段高度",
+      "height": "调整楼梯总高",
+      "curved-width": "调整楼梯宽度",
+      "curved-inner-radius": "调整内半径",
+      "curved-sweep-start": "调整起始端旋转角度",
+      "curved-sweep-end": "调整末端旋转角度",
+      "rotate": "旋转楼梯",
+      "altitude": "调整楼梯离地高度",
+      "move": "移动楼梯"
+    }
+  },
   "history": {
     "name": "操作记录",
     "title": "场景操作记录",
@@ -3827,6 +3960,7 @@
     "empty": "暂无操作记录",
     "ops": {
       "roof": "屋顶",
+      "stair": "楼梯",
       "measurements": "测量标注",
       "draw-wall": "绘制墙体",
       "remove-wall": "删除墙体",
@@ -4113,6 +4247,7 @@
   },
   "element-prototype": {
     "roof": "屋顶",
+    "stair": "楼梯",
     "wall": "墙体",
     "hole": "门窗",
     "zone": "区域",
