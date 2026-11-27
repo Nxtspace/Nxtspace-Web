@@ -128,6 +128,7 @@
     "width": "宽度",
     "height": "高度",
     "altitude": "离地高度",
+    "curve-offset": "弧高",
     "offset-x": "X轴偏移",
     "offset-y": "Y轴偏移",
     "offset-z": "Z轴偏移",
@@ -3575,7 +3576,24 @@
     "tip-parallel-angle": "平行",
     "tip-perpendicular-angle": "垂直",
     "tip-equal-spacing": "等间距",
-    "tip-perpendicular": "垂点"
+    "tip-perpendicular": "垂点",
+    "mode-grid": "网格",
+    "mode-lines": "对齐线",
+    "mode-angles": "角度",
+    "mode-off": "关闭",
+    "mode-label": "吸附：{{mode}}",
+    "grid-step": "网格：{{length}}",
+    "elevation-level": "楼层",
+    "elevation-wall-base": "墙底",
+    "elevation-wall-top": "墙顶",
+    "elevation-thing-base": "物体底面",
+    "elevation-thing-top": "物体顶面",
+    "elevation-hole-base": "门窗底",
+    "elevation-hole-top": "门窗顶",
+    "elevation-stair-base": "楼梯底",
+    "elevation-stair-top": "楼梯顶",
+    "elevation-roof-base": "屋顶底",
+    "elevation-roof-top": "屋顶顶"
   },
   "collapsible": {
     "2d-view": "二维视角",
@@ -3754,6 +3772,41 @@
     "name": "警告",
     "warning-message": "警告消息",
     "recent-messages": "最近警告消息列表。."
+  },
+  "edit-handles": {
+    "thing": {
+      "left": "调整长度（左侧）",
+      "right": "调整长度（右侧）",
+      "back": "调整宽度（后侧）",
+      "front": "调整宽度（前侧）",
+      "height": "调整物体高度",
+      "move": "移动物体",
+      "rotate": "旋转物体",
+      "elevation": "调整物体离地高度"
+    },
+    "door": {
+      "left": "调整门宽（左侧）",
+      "right": "调整门宽（右侧）",
+      "height": "调整门高",
+      "elevation": "调整门离地高度",
+      "move": "沿墙移动门"
+    },
+    "window": {
+      "left": "调整窗宽（左侧）",
+      "right": "调整窗宽（右侧）",
+      "height": "调整窗高",
+      "elevation": "调整窗离地高度",
+      "move": "沿墙移动窗"
+    },
+    "wall": {
+      "start": "拖动墙体起点",
+      "end": "拖动墙体终点",
+      "height": "调整墙高",
+      "elevation": "调整墙体离地高度",
+      "side-a": "调整墙厚",
+      "side-b": "调整墙厚",
+      "curve": "拖动弯曲墙体"
+    }
   },
   "roof": {
     "handles": {
@@ -3967,6 +4020,7 @@
       "move-wall": "移动墙体",
       "split-wall": "拆分墙体",
       "arc-wall": "墙体弧形化",
+      "curve-wall": "弧形墙体",
       "wall-length": "设置墙长",
       "wall-props": "修改墙体属性",
       "add-thing": "放置模型",

@@ -128,6 +128,7 @@
     "width": "Width",
     "height": "Height",
     "altitude": "Altitude",
+    "curve-offset": "Curve",
     "offset-x": "Offset X",
     "offset-y": "Offset Y",
     "offset-z": "Offset Z",
@@ -3575,7 +3576,24 @@
     "tip-parallel-angle": "Parallel",
     "tip-perpendicular-angle": "Perpendicular",
     "tip-equal-spacing": "Equal spacing",
-    "tip-perpendicular": "Perpendicular"
+    "tip-perpendicular": "Perpendicular",
+    "mode-grid": "Grid",
+    "mode-lines": "Lines",
+    "mode-angles": "Angles",
+    "mode-off": "Off",
+    "mode-label": "Snapping: {{mode}}",
+    "grid-step": "Grid: {{length}}",
+    "elevation-level": "Level",
+    "elevation-wall-base": "Wall base",
+    "elevation-wall-top": "Wall top",
+    "elevation-thing-base": "Item base",
+    "elevation-thing-top": "Item top",
+    "elevation-hole-base": "Opening base",
+    "elevation-hole-top": "Opening top",
+    "elevation-stair-base": "Stair base",
+    "elevation-stair-top": "Stair top",
+    "elevation-roof-base": "Roof base",
+    "elevation-roof-top": "Roof top"
   },
   "collapsible": {
     "2d-view": "2D View",
@@ -3754,6 +3772,41 @@
     "name": "Warn",
     "warning-message": "Warning Message",
     "recent-messages": "List of recent warning messages."
+  },
+  "edit-handles": {
+    "thing": {
+      "left": "Resize length (left)",
+      "right": "Resize length (right)",
+      "back": "Resize width (back)",
+      "front": "Resize width (front)",
+      "height": "Adjust object height",
+      "move": "Move object",
+      "rotate": "Rotate object",
+      "elevation": "Adjust object elevation"
+    },
+    "door": {
+      "left": "Resize door width (left)",
+      "right": "Resize door width (right)",
+      "height": "Adjust door height",
+      "elevation": "Adjust door elevation",
+      "move": "Slide door along wall"
+    },
+    "window": {
+      "left": "Resize window width (left)",
+      "right": "Resize window width (right)",
+      "height": "Adjust window height",
+      "elevation": "Adjust window elevation",
+      "move": "Slide window along wall"
+    },
+    "wall": {
+      "start": "Drag wall start point",
+      "end": "Drag wall end point",
+      "height": "Adjust wall height",
+      "elevation": "Adjust wall elevation",
+      "side-a": "Adjust wall thickness",
+      "side-b": "Adjust wall thickness",
+      "curve": "Drag to curve wall"
+    }
   },
   "roof": {
     "handles": {
@@ -3967,6 +4020,7 @@
       "move-wall": "Move wall",
       "split-wall": "Split wall",
       "arc-wall": "Arcify wall",
+      "curve-wall": "Curve wall",
       "wall-length": "Set wall length",
       "wall-props": "Edit wall properties",
       "add-thing": "Place model",
